@@ -15,7 +15,7 @@
     <repository type="GitHub" url="https://github.com/cake-contrib/Cake.AppCenter" />
   </metadata>
   <files>
-    <file src="Cake.AppCenter.dll" target="lib/netstandard2.0" />
-    <file src="Cake.AppCenter.xml" target="lib/netstandard2.0" />
+    <file src="netstandard2.0/Cake.AppCenter.dll" target="lib/netstandard2.0" />
+    <file src="netstandard2.0/Cake.AppCenter.xml" target="lib/netstandard2.0" />
   </files>
 </package>
