@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.AppCenter", "Cake.AppCenter\Cake.AppCenter.csproj", "{380D7A26-A9FF-449E-9A7A-8F4A8696045D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.AppCenter.Tests", "Cake.AppCenter.Tests\Cake.AppCenter.Tests.csproj", "{43AA053A-2C56-4036-8C97-210C34649A7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3509B976-7BAF-4918-949C-41F194C5E424}"
+	ProjectSection(SolutionItems) = preProject
+		..\.appveyor.yml = ..\.appveyor.yml
+		..\nuspec\nuget\Cake.AppCenter.nuspec = ..\nuspec\nuget\Cake.AppCenter.nuspec
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+		..\setup.cake = ..\setup.cake
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{380D7A26-A9FF-449E-9A7A-8F4A8696045D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380D7A26-A9FF-449E-9A7A-8F4A8696045D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380D7A26-A9FF-449E-9A7A-8F4A8696045D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380D7A26-A9FF-449E-9A7A-8F4A8696045D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43AA053A-2C56-4036-8C97-210C34649A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43AA053A-2C56-4036-8C97-210C34649A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43AA053A-2C56-4036-8C97-210C34649A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43AA053A-2C56-4036-8C97-210C34649A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50FDE2AF-53DE-47CB-81E8-A36E05D91B73}
+	EndGlobalSection
+EndGlobal
