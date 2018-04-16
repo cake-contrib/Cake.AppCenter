@@ -20,17 +20,17 @@ namespace Cake.MobilityCenter.Tests.Apps.Create
         ICakeArguments ICakeContext.Arguments => throw new NotImplementedException();
         IProcessRunner ICakeContext.ProcessRunner => ProcessRunner;
         public IRegistry Registry => Registry;
-        public AppCenterAppsCreateFixture(): base("mobility-center")
+        public AppCenterAppsCreateFixture(): base("appcenter")
         {
             Tools = Substitute.For<IToolLocator>();
             fileSystem = Substitute.For<IFileSystem>();
             environment = Substitute.For<ICakeEnvironment>();
-            var toolPath = new FilePath("mobile-center");
+            var toolPath = new FilePath("appcenter");
             var file = Substitute.For<IFile>();
             file.Exists.Returns(true);
             fileSystem.GetFile(toolPath).Returns(file);
             environment.WorkingDirectory.Returns("C:/Temp");
-            Tools.Resolve("mobile-center").Returns(toolPath);
+            Tools.Resolve("appcenter").Returns(toolPath);
             ProcessRunner.Process.SetStandardOutput(new string[] { });
         }
         protected override void RunTool()
