@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard2.0\Cake.MobileCenter.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netstandard2.0\Cake.AppCenter.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
