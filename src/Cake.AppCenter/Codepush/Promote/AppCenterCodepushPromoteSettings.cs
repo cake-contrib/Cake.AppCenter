@@ -36,6 +36,16 @@ namespace Cake.AppCenter
 		/// </summary>
 		public bool? DisableDuplicateReleaseError { get; set; }
 		/// <summary>
+		/// -x|--disabled
+		/// Specifies whether this release should be immediately downloadable. (Putting -x flag means disabled)
+		/// </summary>
+		public bool? Disabled { get; set; }
+		/// <summary>
+		/// -m|--mandatory
+		/// Specifies whether this release should be considered mandatory. (Putting -m flag means mandatory)
+		/// </summary>
+		public bool? Mandatory { get; set; }
+		/// <summary>
 		/// -l|--label &lt;arg&gt;
 		/// Allows you to pick the specified label from the source deployment and promote it to the destination deployment
 		/// </summary>

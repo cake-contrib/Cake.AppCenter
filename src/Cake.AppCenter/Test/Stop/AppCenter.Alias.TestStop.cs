@@ -1,16 +1,18 @@
 using Cake.Core;
 using Cake.Core.Annotations;
 using System;
+using System.Collections.Generic;
 
 namespace Cake.AppCenter
 {
 	partial class AppCenterAliases
 	{
-     /// <summary>
+         /// <summary>
 	    /// Stop the started test run.
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        
 		[CakeMethodAlias]
 		public static void AppCenterTestStop(this ICakeContext context, AppCenterTestStopSettings settings)
 		{
@@ -20,7 +22,27 @@ namespace Cake.AppCenter
 			}
                  var arguments = new string[0];
             var runner = new GenericRunner<AppCenterTestStopSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
-			runner.Run("test stop", settings ?? new AppCenterTestStopSettings(), arguments);
+			 runner.Run("test stop", settings ?? new AppCenterTestStopSettings(), arguments);
 		}
+
+
+         /// <summary>
+	    /// Stop the started test run.
+		/// </summary>
+		/// <param name="context">The context.</param>
+		/// <param name="settings">The settings.</param>
+        /// <returns>Output lines.</returns>
+		[CakeMethodAlias]
+		public static IEnumerable<string> AppCenterTestStopWithResult(this ICakeContext context, AppCenterTestStopSettings settings)
+		{
+			if (context == null)
+			{
+				throw new ArgumentNullException("context");
+			}
+                 var arguments = new string[0];
+            var runner = new GenericRunner<AppCenterTestStopSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+			return runner.RunWithResult("test stop", settings ?? new AppCenterTestStopSettings(), arguments);
+		}
+
 	}
 }

@@ -1,16 +1,18 @@
 using Cake.Core;
 using Cake.Core.Annotations;
 using System;
+using System.Collections.Generic;
 
 namespace Cake.AppCenter
 {
 	partial class AppCenterAliases
 	{
-     /// <summary>
+         /// <summary>
 	    /// Update organization information
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        
 		[CakeMethodAlias]
 		public static void AppCenterOrgsUpdate(this ICakeContext context, AppCenterOrgsUpdateSettings settings)
 		{
@@ -20,7 +22,27 @@ namespace Cake.AppCenter
 			}
                  var arguments = new string[0];
             var runner = new GenericRunner<AppCenterOrgsUpdateSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
-			runner.Run("orgs update", settings ?? new AppCenterOrgsUpdateSettings(), arguments);
+			 runner.Run("orgs update", settings ?? new AppCenterOrgsUpdateSettings(), arguments);
 		}
+
+
+         /// <summary>
+	    /// Update organization information
+		/// </summary>
+		/// <param name="context">The context.</param>
+		/// <param name="settings">The settings.</param>
+        /// <returns>Output lines.</returns>
+		[CakeMethodAlias]
+		public static IEnumerable<string> AppCenterOrgsUpdateWithResult(this ICakeContext context, AppCenterOrgsUpdateSettings settings)
+		{
+			if (context == null)
+			{
+				throw new ArgumentNullException("context");
+			}
+                 var arguments = new string[0];
+            var runner = new GenericRunner<AppCenterOrgsUpdateSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+			return runner.RunWithResult("orgs update", settings ?? new AppCenterOrgsUpdateSettings(), arguments);
+		}
+
 	}
 }

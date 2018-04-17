@@ -5,7 +5,7 @@ namespace Cake.AppCenter
     /// <summary>
     /// Contains functionality for working with appcenter commands.
     /// </summary>
-    [CakeAliasCategory("Deployment")]
+    [CakeAliasCategory("AppCenter")]
     public static partial class AppCenterAliases
     {
     }

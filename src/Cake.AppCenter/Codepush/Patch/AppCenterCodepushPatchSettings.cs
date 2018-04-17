@@ -26,6 +26,16 @@ namespace Cake.AppCenter
 		/// </summary>
 		public string TargetBinaryVersion { get; set; }
 		/// <summary>
+		/// -x|--disabled
+		/// Specifies whether this release should be immediately downloadable. (Putting -x flag means disabled)
+		/// </summary>
+		public bool? Disabled { get; set; }
+		/// <summary>
+		/// -m|--mandatory
+		/// Specifies whether this release should be considered mandatory. (Putting -m flag means mandatory)
+		/// </summary>
+		public bool? Mandatory { get; set; }
+		/// <summary>
 		/// -l|--existing-release-label &lt;arg&gt;
 		/// Specifies label of one existing release to update. (Defaults to the latest release within the specified deployment)
 		/// </summary>

@@ -1,34 +1,48 @@
 using Cake.Core;
 using Cake.Core.Annotations;
 using System;
+using System.Collections.Generic;
 
 namespace Cake.AppCenter
 {
 	partial class AppCenterAliases
 	{
-     /// <summary>
+         /// <summary>
 	    /// Create a new release for the destination deployment, which includes the exact code and metadata from the latest release of the source deployment
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        
 		[CakeMethodAlias]
-		public static void AppCenterCodepushPromote(this ICakeContext context, AppCenterCodepushPromoteSettings settings, string x, string m)
+		public static void AppCenterCodepushPromote(this ICakeContext context, AppCenterCodepushPromoteSettings settings)
 		{
 			if (context == null)
 			{
 				throw new ArgumentNullException("context");
 			}
-            if (string.IsNullOrEmpty(x))
-            {
-                throw new ArgumentNullException(nameof(x));
-            }
-            if (string.IsNullOrEmpty(m))
-            {
-                throw new ArgumentNullException(nameof(m));
-            }
-            var arguments = new string[] { x, m };
+                 var arguments = new string[0];
             var runner = new GenericRunner<AppCenterCodepushPromoteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
-			runner.Run("codepush promote", settings ?? new AppCenterCodepushPromoteSettings(), arguments);
+			 runner.Run("codepush promote", settings ?? new AppCenterCodepushPromoteSettings(), arguments);
 		}
+
+
+         /// <summary>
+	    /// Create a new release for the destination deployment, which includes the exact code and metadata from the latest release of the source deployment
+		/// </summary>
+		/// <param name="context">The context.</param>
+		/// <param name="settings">The settings.</param>
+        /// <returns>Output lines.</returns>
+		[CakeMethodAlias]
+		public static IEnumerable<string> AppCenterCodepushPromoteWithResult(this ICakeContext context, AppCenterCodepushPromoteSettings settings)
+		{
+			if (context == null)
+			{
+				throw new ArgumentNullException("context");
+			}
+                 var arguments = new string[0];
+            var runner = new GenericRunner<AppCenterCodepushPromoteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+			return runner.RunWithResult("codepush promote", settings ?? new AppCenterCodepushPromoteSettings(), arguments);
+		}
+
 	}
 }
