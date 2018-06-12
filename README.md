@@ -4,6 +4,7 @@ A Cake AddIn that extends Cake with [AppCenter](https://github.com/Microsoft/app
 
 [![cakebuild.net](https://img.shields.io/badge/WWW-cakebuild.net-blue.svg)](http://cakebuild.net/)
 [![NuGet](https://img.shields.io/nuget/v/Cake.AppCenter.svg)](https://www.nuget.org/packages/Cake.AppCenter)
+[![Build status](https://ci.appveyor.com/api/projects/status/vi07dth3d1gek7ak?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-appcenter)
 
 ## Important
 
