@@ -6,6 +6,7 @@ using Cake.AppCenter;
 using Cake.Core.IO;
 using Cake.Core.Tooling;
 using NSubstitute;
+using Cake.Core.Configuration;
 
 namespace Cake.MobilityCenter.Tests.Apps.Create
 {
@@ -20,6 +21,9 @@ namespace Cake.MobilityCenter.Tests.Apps.Create
         ICakeArguments ICakeContext.Arguments => throw new NotImplementedException();
         IProcessRunner ICakeContext.ProcessRunner => ProcessRunner;
         public IRegistry Registry => Registry;
+        public ICakeDataResolver Data => throw new NotImplementedException();
+        ICakeConfiguration ICakeContext.Configuration => throw new NotImplementedException();
+
         public AppCenterAppsCreateFixture(): base("appcenter")
         {
             Tools = Substitute.For<IToolLocator>();
