@@ -8,7 +8,9 @@ A Cake AddIn that extends Cake with [AppCenter](https://github.com/Microsoft/app
 
 ## Important
 
-Supports Cake 0.26 and .NET Standard 2.0.
+1.2.0 Supports Cake 0.33
+
+1.0.0 Supports Cake 0.26 and .NET Standard 2.0.
 
 ## Including addin
 Including addin in cake script is easy.
