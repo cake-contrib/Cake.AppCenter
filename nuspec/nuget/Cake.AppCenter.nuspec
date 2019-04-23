@@ -8,7 +8,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://raw.githubusercontent.com/cake-contrib/Cake.AppCenter/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/cake-contrib/Cake.AppCenter</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</iconUrl>
     <description>AppCenter Addin for Cake Build, Test and Deployment Automation System.</description>
     <copyright>Copyright 2018 (c) Miha Markic and contributors</copyright>
     <tags>Cake Script Build Test Deploy AppCenter Deployment</tags>
