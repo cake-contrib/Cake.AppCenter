@@ -9,11 +9,10 @@
     <projectUrl>https://github.com/cake-contrib/Cake.AppCenter</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</iconUrl>
     <license type="expression">MIT</license>
-    <repository type="git" url="https://github.com/cake-contrib/Cake.AppCenter.git"/>
     <description>AppCenter Addin for Cake Build, Test and Deployment Automation System.</description>
     <copyright>Copyright 2018 (c) Miha Markic and contributors</copyright>
     <tags>Cake Script Build Test Deploy AppCenter Deployment</tags>
-    <repository type="GitHub" url="https://github.com/cake-contrib/Cake.AppCenter" />
+    <repository type="git" url="https://github.com/cake-contrib/Cake.AppCenter.git" />
   </metadata>
   <files>
     <file src="netstandard2.0/Cake.AppCenter.dll" target="lib/netstandard2.0" />
