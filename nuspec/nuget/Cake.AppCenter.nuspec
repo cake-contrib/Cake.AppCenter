@@ -6,9 +6,10 @@
     <authors>Miha Markic, Cake Contributors</authors>
     <owners>Miha Markic, Cake Contributors</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>https://raw.githubusercontent.com/cake-contrib/Cake.AppCenter/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/cake-contrib/Cake.AppCenter</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</iconUrl>
+    <license type="expression">MIT</license>
+    <repository type="git" url="https://github.com/cake-contrib/Cake.AppCenter.git"/>
     <description>AppCenter Addin for Cake Build, Test and Deployment Automation System.</description>
     <copyright>Copyright 2018 (c) Miha Markic and contributors</copyright>
     <tags>Cake Script Build Test Deploy AppCenter Deployment</tags>
