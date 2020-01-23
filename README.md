@@ -12,6 +12,20 @@ A Cake AddIn that extends Cake with [AppCenter](https://github.com/Microsoft/app
 
 1.0.0 Supports Cake 0.26 and .NET Standard 2.0.
 
+## Requirements
+
+App Center Command Line Interface (CLI) must be installed, and Cake.AppCenter does not work without it (error will be *AppCenter: Could not locate executable.* if you try to use Cake.AppCenter without appcenter-cli). This can be done by installing [Node.js](https://nodejs.org/) first, and then by using **npm** from command-line/terminal
+
+```
+npm install -g appcenter-cli
+```
+
+or run with sudo if you get permission errors
+
+```
+sudo npm install -g appcenter-cli
+```
+
 ## Including addin
 Including addin in cake script is easy.
 ```
