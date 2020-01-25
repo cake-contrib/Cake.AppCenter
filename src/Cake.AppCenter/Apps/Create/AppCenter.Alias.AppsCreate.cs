@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Apps")] 
 		public static void AppCenterAppsCreate(this ICakeContext context, AppCenterAppsCreateSettings settings)
 		{
 			if (context == null)
@@ -33,6 +34,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Apps")] 
 		public static IEnumerable<string> AppCenterAppsCreateWithResult(this ICakeContext context, AppCenterAppsCreateSettings settings)
 		{
 			if (context == null)

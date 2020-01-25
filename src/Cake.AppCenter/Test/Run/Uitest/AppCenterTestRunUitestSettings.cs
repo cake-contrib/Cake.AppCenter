@@ -27,19 +27,19 @@ namespace Cake.AppCenter
 		public bool? TestChunk { get; set; }
 		/// <summary>
 		/// --merge-nunit-xml &lt;arg&gt;
-		/// Merge the xml files in to the &lt;output.xml&gt; file. This parameter won&#39;t work when you run using --async because we have to wait for test results
+		/// Merge the xml files in to the &lt;arg&gt; file. This parameter won&#39;t work when you run using --async because we have to wait for test results
 		/// </summary>
 		public string MergeNunitXml { get; set; }
 		/// <summary>
 		/// --exclude-category &lt;arg&gt;
 		/// NUnit category to not run. (Can be used multiple times) (When include and/or fixture are combined with exclude, all tests with the included categories are run, except for those also marked with the excluded categories)
 		/// </summary>
-		public string[] ExcludeCategory { get; set; }
+		public string ExcludeCategory { get; set; }
 		/// <summary>
 		/// --include-category &lt;arg&gt;
 		/// NUnit category to run. (Can be used multiple times)
 		/// </summary>
-		public string[] IncludeCategory { get; set; }
+		public string IncludeCategory { get; set; }
 		/// <summary>
 		/// --fixture &lt;arg&gt;
 		/// NUnit fixture / namespace to run. If used with include / exclude the fixture filter is applied first (Can be used multiple times)
@@ -87,7 +87,7 @@ namespace Cake.AppCenter
 		public string BuildDir { get; set; }
 		/// <summary>
 		/// --test-output-dir &lt;arg&gt;
-		/// Path to the directory for test results. This parameter won&#39;t work when you run using --async because we have to wait for test results. The results will be saved in the working directory if the relative path is specified
+		/// Path to the directory for test results. This parameter won&#39;t work when you run using --async because we have to wait for test results. The results will be saved in the working directory if a relative path is specified
 		/// </summary>
 		public string TestOutputDir { get; set; }
 		/// <summary>
@@ -132,7 +132,7 @@ namespace Cake.AppCenter
 		public string Locale { get; set; }
 		/// <summary>
 		/// --dsym-dir &lt;arg&gt;
-		/// Path to the directory with iOS symbol files
+		/// Path to the directory with iOS symbol files. This option is deprecated and ignored
 		/// </summary>
 		public string DsymDir { get; set; }
 		/// <summary>

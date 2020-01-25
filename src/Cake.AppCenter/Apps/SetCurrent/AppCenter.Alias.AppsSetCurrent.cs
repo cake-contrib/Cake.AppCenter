@@ -8,12 +8,13 @@ namespace Cake.AppCenter
 	partial class AppCenterAliases
 	{
          /// <summary>
-	    /// Set default application for all CLI commands
+	    /// Set default application for all CLI commands. Not compatible when authenticating with '--token' or an environment variable. Use environment variable 'MOBILE_CENTER_CURRENT_APP' to set the default app instead.
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Apps")] 
 		public static void AppCenterAppsSetCurrent(this ICakeContext context, AppCenterAppsSetCurrentSettings settings, string app)
 		{
 			if (context == null)
@@ -31,12 +32,13 @@ namespace Cake.AppCenter
 
 
          /// <summary>
-	    /// Set default application for all CLI commands
+	    /// Set default application for all CLI commands. Not compatible when authenticating with '--token' or an environment variable. Use environment variable 'MOBILE_CENTER_CURRENT_APP' to set the default app instead.
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Apps")] 
 		public static IEnumerable<string> AppCenterAppsSetCurrentWithResult(this ICakeContext context, AppCenterAppsSetCurrentSettings settings, string app)
 		{
 			if (context == null)

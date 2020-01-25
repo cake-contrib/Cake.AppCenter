@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Orgs")] 
 		public static void AppCenterOrgsCollaboratorsUpdate(this ICakeContext context, AppCenterOrgsCollaboratorsUpdateSettings settings)
 		{
 			if (context == null)
@@ -33,6 +34,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Orgs")] 
 		public static IEnumerable<string> AppCenterOrgsCollaboratorsUpdateWithResult(this ICakeContext context, AppCenterOrgsCollaboratorsUpdateSettings settings)
 		{
 			if (context == null)

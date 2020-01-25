@@ -21,8 +21,13 @@ namespace Cake.AppCenter
 		/// </summary>
 		public string Id { get; set; }
 		/// <summary>
+		/// -f|--file &lt;arg&gt;
+		/// Destination file. Optional parameter to override the default auto-generated file name
+		/// </summary>
+		public string File { get; set; }
+		/// <summary>
 		/// -d|--dest &lt;arg&gt;
-		/// Download destination path
+		/// Destination path. Optional parameter to override the default destination path of the downloaded build
 		/// </summary>
 		public string Dest { get; set; }
 		/// <summary>

@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Distribute")] 
 		public static void AppCenterDistributeGroupsUpdate(this ICakeContext context, AppCenterDistributeGroupsUpdateSettings settings)
 		{
 			if (context == null)
@@ -33,6 +34,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Distribute")] 
 		public static IEnumerable<string> AppCenterDistributeGroupsUpdateWithResult(this ICakeContext context, AppCenterDistributeGroupsUpdateSettings settings)
 		{
 			if (context == null)

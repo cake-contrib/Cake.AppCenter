@@ -11,6 +11,11 @@ namespace Cake.AppCenter
 	public sealed class AppCenterAppsUpdateSettings : AutoToolSettings
 	{
 		/// <summary>
+		/// -r|--release-type &lt;arg&gt;
+		/// The app release type. Suggested values are Alpha, Beta, Production, Store, Enterprise. Custom values are allowed and must be must be one word, alphanumeric, first letter capitalized.
+		/// </summary>
+		public string ReleaseType { get; set; }
+		/// <summary>
 		/// -n|--name &lt;arg&gt;
 		/// The name of the app used in URLs.
 		/// </summary>

@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Crashes")] 
 		public static void AppCenterCrashesUploadSymbols(this ICakeContext context, AppCenterCrashesUploadSymbolsSettings settings)
 		{
 			if (context == null)
@@ -33,6 +34,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Crashes")] 
 		public static IEnumerable<string> AppCenterCrashesUploadSymbolsWithResult(this ICakeContext context, AppCenterCrashesUploadSymbolsSettings settings)
 		{
 			if (context == null)

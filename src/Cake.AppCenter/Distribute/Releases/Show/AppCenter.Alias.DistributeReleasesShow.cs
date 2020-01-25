@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Distribute")] 
 		public static void AppCenterDistributeReleasesShow(this ICakeContext context, AppCenterDistributeReleasesShowSettings settings)
 		{
 			if (context == null)
@@ -33,6 +34,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Distribute")] 
 		public static IEnumerable<string> AppCenterDistributeReleasesShowWithResult(this ICakeContext context, AppCenterDistributeReleasesShowSettings settings)
 		{
 			if (context == null)

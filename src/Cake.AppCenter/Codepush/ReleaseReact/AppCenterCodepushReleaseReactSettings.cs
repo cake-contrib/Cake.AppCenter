@@ -11,6 +11,16 @@ namespace Cake.AppCenter
 	public sealed class AppCenterCodepushReleaseReactSettings : AutoToolSettings
 	{
 		/// <summary>
+		/// --extra-hermes-flag &lt;arg&gt;
+		/// Flag that gets passed to Hermes, JavaScript to bytecode compiler. Can be specified multiple times
+		/// </summary>
+		public string ExtraHermesFlag { get; set; }
+		/// <summary>
+		/// --extra-bundler-option &lt;arg&gt;
+		/// Option that gets passed to react-native bundler. Can be specified multiple times
+		/// </summary>
+		public string ExtraBundlerOption { get; set; }
+		/// <summary>
 		/// -t|--target-binary-version &lt;arg&gt;
 		/// Semver expression that specifies the binary app version(s) this release is targeting (e.g. 1.1.0, ~1.2.3)
 		/// </summary>
@@ -20,6 +30,11 @@ namespace Cake.AppCenter
 		/// Path to where the bundle and sourcemap should be written. If omitted, a bundle and sourcemap will not be written
 		/// </summary>
 		public string OutputDir { get; set; }
+		/// <summary>
+		/// --sourcemap-output-dir &lt;arg&gt;
+		/// Path to folder where the sourcemap for the resulting bundle should be written. Name of sourcemap file will be generated automatically. This argument will be ignored if &quot;sourcemap-output&quot; argument is provided. If omitted, a sourcemap will not be generated
+		/// </summary>
+		public string SourcemapOutputDir { get; set; }
 		/// <summary>
 		/// -s|--sourcemap-output &lt;arg&gt;
 		/// Path to where the sourcemap for the resulting bundle should be written. If omitted, a sourcemap will not be generated

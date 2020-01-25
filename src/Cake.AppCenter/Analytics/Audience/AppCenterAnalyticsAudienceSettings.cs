@@ -31,6 +31,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		public bool? Devices { get; set; }
 		/// <summary>
+		/// -b|--app-build &lt;arg&gt;
+		/// Specify app build to show statistics for
+		/// </summary>
+		public string AppBuild { get; set; }
+		/// <summary>
 		/// -V|--app-version &lt;arg&gt;
 		/// Specify app version to show statistics for
 		/// </summary>

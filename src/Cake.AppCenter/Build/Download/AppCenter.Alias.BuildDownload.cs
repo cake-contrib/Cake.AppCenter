@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Build")] 
 		public static void AppCenterBuildDownload(this ICakeContext context, AppCenterBuildDownloadSettings settings)
 		{
 			if (context == null)
@@ -33,6 +34,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Build")] 
 		public static IEnumerable<string> AppCenterBuildDownloadWithResult(this ICakeContext context, AppCenterBuildDownloadSettings settings)
 		{
 			if (context == null)

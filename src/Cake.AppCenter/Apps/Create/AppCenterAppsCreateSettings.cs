@@ -12,12 +12,12 @@ namespace Cake.AppCenter
 	{
 		/// <summary>
 		/// -p|--platform &lt;arg&gt;
-		/// The platform of the app. Supported values: Java, Objective-C-Swift, React-Native, UWP, Xamarin
+		/// The platform of the app. Supported values: Cordova, Java, Objective-C-Swift, React-Native, Unity, UWP, WinForms, WPF, Xamarin, Custom
 		/// </summary>
 		public string Platform { get; set; }
 		/// <summary>
 		/// -o|--os &lt;arg&gt;
-		/// The OS the app will be running on. Supported values: Android, iOS, Windows
+		/// The OS the app will be running on. Supported values: Android, Custom, iOS, macOS, tvOS, Windows
 		/// </summary>
 		public string Os { get; set; }
 		/// <summary>
@@ -25,6 +25,11 @@ namespace Cake.AppCenter
 		/// The descriptive name of the app. This can contain any characters
 		/// </summary>
 		public string DisplayName { get; set; }
+		/// <summary>
+		/// -r|--release-type &lt;arg&gt;
+		/// The app release type. Suggested values are Alpha, Beta, Production, Store, Enterprise. Custom values are allowed and must be must be one word, alphanumeric, first letter capitalized.
+		/// </summary>
+		public string ReleaseType { get; set; }
 		/// <summary>
 		/// -n|--name &lt;arg&gt;
 		/// The name of the app used in URLs. Can optionally be provided specifically, otherwise a generated name will be derived from display-name

@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Login")] 
 		public static void AppCenterLogin(this ICakeContext context, AppCenterLoginSettings settings)
 		{
 			if (context == null)
@@ -33,6 +34,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Login")] 
 		public static IEnumerable<string> AppCenterLoginWithResult(this ICakeContext context, AppCenterLoginSettings settings)
 		{
 			if (context == null)

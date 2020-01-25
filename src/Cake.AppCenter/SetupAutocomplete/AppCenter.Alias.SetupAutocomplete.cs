@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Setup Autocomplete")] 
 		public static void AppCenterSetupAutocomplete(this ICakeContext context, AppCenterSetupAutocompleteSettings settings, string shellProfilePath)
 		{
 			if (context == null)
@@ -37,6 +38,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Setup Autocomplete")] 
 		public static IEnumerable<string> AppCenterSetupAutocompleteWithResult(this ICakeContext context, AppCenterSetupAutocompleteSettings settings, string shellProfilePath)
 		{
 			if (context == null)

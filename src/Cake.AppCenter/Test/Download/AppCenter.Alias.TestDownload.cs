@@ -8,12 +8,13 @@ namespace Cake.AppCenter
 	partial class AppCenterAliases
 	{
          /// <summary>
-	    /// Download the report artifacts, unpack and merge them.
+	    /// Download the report artifacts, unpack and merge them. This command is only available for UITest and Appium test runs.
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Test")] 
 		public static void AppCenterTestDownload(this ICakeContext context, AppCenterTestDownloadSettings settings)
 		{
 			if (context == null)
@@ -27,12 +28,13 @@ namespace Cake.AppCenter
 
 
          /// <summary>
-	    /// Download the report artifacts, unpack and merge them.
+	    /// Download the report artifacts, unpack and merge them. This command is only available for UITest and Appium test runs.
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Test")] 
 		public static IEnumerable<string> AppCenterTestDownloadWithResult(this ICakeContext context, AppCenterTestDownloadSettings settings)
 		{
 			if (context == null)

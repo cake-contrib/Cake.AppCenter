@@ -11,6 +11,11 @@ namespace Cake.AppCenter
 	public sealed class AppCenterCodepushDeploymentListSettings : AutoToolSettings
 	{
 		/// <summary>
+		/// -k|--displayKeys
+		/// Specifies whether to display the deployment keys
+		/// </summary>
+		public bool? DisplayKeys { get; set; }
+		/// <summary>
 		/// -a|--app &lt;arg&gt;
 		/// Specify app in the &lt;ownerName&gt;/&lt;appName&gt; format
 		/// </summary>

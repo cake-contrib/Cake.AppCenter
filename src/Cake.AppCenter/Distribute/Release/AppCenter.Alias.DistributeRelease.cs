@@ -8,12 +8,13 @@ namespace Cake.AppCenter
 	partial class AppCenterAliases
 	{
          /// <summary>
-	    /// Upload release binary and trigger distribution
+	    /// Upload release binary and trigger distribution, at least one of --store or --group must be specified
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Distribute")] 
 		public static void AppCenterDistributeRelease(this ICakeContext context, AppCenterDistributeReleaseSettings settings)
 		{
 			if (context == null)
@@ -27,12 +28,13 @@ namespace Cake.AppCenter
 
 
          /// <summary>
-	    /// Upload release binary and trigger distribution
+	    /// Upload release binary and trigger distribution, at least one of --store or --group must be specified
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Distribute")] 
 		public static IEnumerable<string> AppCenterDistributeReleaseWithResult(this ICakeContext context, AppCenterDistributeReleaseSettings settings)
 		{
 			if (context == null)
