@@ -34,12 +34,12 @@ namespace Cake.AppCenter
 		/// --exclude-category &lt;arg&gt;
 		/// NUnit category to not run. (Can be used multiple times) (When include and/or fixture are combined with exclude, all tests with the included categories are run, except for those also marked with the excluded categories)
 		/// </summary>
-		public string ExcludeCategory { get; set; }
+		public string[] ExcludeCategory { get; set; }
 		/// <summary>
 		/// --include-category &lt;arg&gt;
 		/// NUnit category to run. (Can be used multiple times)
 		/// </summary>
-		public string IncludeCategory { get; set; }
+		public string[] IncludeCategory { get; set; }
 		/// <summary>
 		/// --fixture &lt;arg&gt;
 		/// NUnit fixture / namespace to run. If used with include / exclude the fixture filter is applied first (Can be used multiple times)
