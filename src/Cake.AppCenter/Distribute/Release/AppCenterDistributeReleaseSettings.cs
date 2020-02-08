@@ -75,5 +75,10 @@ namespace Cake.AppCenter
 		/// Display extra output for debugging
 		/// </summary>
 		public bool? Debug { get; set; }
+		/// <summary>
+		/// --silent 
+		/// Do not notify testers of this release
+		/// </summary>
+		public bool? Silent { get; set; }
 	}
 }
