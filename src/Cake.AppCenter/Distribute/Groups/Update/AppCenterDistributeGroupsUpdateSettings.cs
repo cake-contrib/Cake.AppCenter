@@ -16,6 +16,16 @@ namespace Cake.AppCenter
 		/// </summary>
 		public string Group { get; set; }
 		/// <summary>
+		/// --private
+		/// Make the distribution group private (allowing only members to download the releases). Don&#39;t use with opposite --public.
+		/// </summary>
+		public bool? Private { get; set; }
+		/// <summary>
+		/// -p|--public
+		/// Make the distribution group public (allowing anyone to download the releases). Don&#39;t use with opposite --private.
+		/// </summary>
+		public bool? Public { get; set; }
+		/// <summary>
 		/// -D|--delete-testers-file &lt;arg&gt;
 		/// Path to file containing list of testers to delete
 		/// </summary>

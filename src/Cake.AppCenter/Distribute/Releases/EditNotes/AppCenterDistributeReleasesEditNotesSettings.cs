@@ -4,57 +4,27 @@ using System.Runtime.CompilerServices;
 namespace Cake.AppCenter
 {
 	/// <summary>
-	/// Settings for appcenter distribute release.
-	/// Upload release binary and trigger distribution, at least one of --store or --group must be specified.
+	/// Settings for appcenter distribute releases edit-notes.
+	/// Update release notes.
 	/// </summary>
 	[CompilerGenerated]
-	public sealed class AppCenterDistributeReleaseSettings : AutoToolSettings
+	public sealed class AppCenterDistributeReleasesEditNotesSettings : AutoToolSettings
 	{
 		/// <summary>
-		/// -f|--file &lt;arg&gt;
-		/// Path to binary file
+		/// -r|--release-id &lt;arg&gt;
+		/// Release ID
 		/// </summary>
-		public string File { get; set; }
+		public string ReleaseId { get; set; }
 		/// <summary>
-		/// --mandatory
-		/// Make the release mandatory for the testers (default is false)
-		/// </summary>
-		public bool? Mandatory { get; set; }
-		/// <summary>
-		/// --silent
-		/// Do not notify testers of this release
-		/// </summary>
-		public bool? Silent { get; set; }
-		/// <summary>
-		/// -R|--release-notes-file &lt;arg&gt;
+		/// -N|--release-notes-file &lt;arg&gt;
 		/// Path to release notes file
 		/// </summary>
 		public string ReleaseNotesFile { get; set; }
 		/// <summary>
-		/// -r|--release-notes &lt;arg&gt;
+		/// -n|--release-notes &lt;arg&gt;
 		/// Release notes text
 		/// </summary>
 		public string ReleaseNotes { get; set; }
-		/// <summary>
-		/// -s|--store &lt;arg&gt;
-		/// Store name
-		/// </summary>
-		public string Store { get; set; }
-		/// <summary>
-		/// -g|--group &lt;arg&gt;
-		/// Distribution group name
-		/// </summary>
-		public string Group { get; set; }
-		/// <summary>
-		/// -n|--build-number &lt;arg&gt;
-		/// Build number parameter required for macOS .pkg and .dmg files
-		/// </summary>
-		public string BuildNumber { get; set; }
-		/// <summary>
-		/// -b|--build-version &lt;arg&gt;
-		/// Build version parameter required for .zip, .msi, .pkg and .dmg files
-		/// </summary>
-		public string BuildVersion { get; set; }
 		/// <summary>
 		/// -a|--app &lt;arg&gt;
 		/// Specify app in the &lt;ownerName&gt;/&lt;appName&gt; format

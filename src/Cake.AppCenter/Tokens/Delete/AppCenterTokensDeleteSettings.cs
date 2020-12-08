@@ -11,6 +11,16 @@ namespace Cake.AppCenter
 	public sealed class AppCenterTokensDeleteSettings : AutoToolSettings
 	{
 		/// <summary>
+		/// -t|--type &lt;arg&gt;
+		/// The type of token: [ user, app ]. An app must be specified for app type tokens
+		/// </summary>
+		public string Type { get; set; }
+		/// <summary>
+		/// -a|--app &lt;arg&gt;
+		/// Specify app in the &lt;ownerName&gt;/&lt;appName&gt; format
+		/// </summary>
+		public string App { get; set; }
+		/// <summary>
 		/// --disable-telemetry
 		/// Disable telemetry for this command
 		/// </summary>

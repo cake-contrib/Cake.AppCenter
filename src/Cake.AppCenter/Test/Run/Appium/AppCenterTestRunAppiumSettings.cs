@@ -22,7 +22,7 @@ namespace Cake.AppCenter
 		public string Devices { get; set; }
 		/// <summary>
 		/// --merge-junit-xml &lt;arg&gt;
-		/// Merge the xml files in to the &lt;arg&gt; file. This parameter won&#39;t work when you run using --async because we have to wait for test results
+		/// Merge the xml files into the &lt;arg&gt; file. Requires --test-output-dir to specify the directory where the &lt;arg&gt; file will be. This parameter is ignored when used with the --async option because we have to wait for test results.
 		/// </summary>
 		public string MergeJunitXml { get; set; }
 		/// <summary>

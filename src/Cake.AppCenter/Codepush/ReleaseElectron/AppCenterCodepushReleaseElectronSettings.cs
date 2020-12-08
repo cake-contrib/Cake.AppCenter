@@ -37,7 +37,7 @@ namespace Cake.AppCenter
 		public string SourcemapOutput { get; set; }
 		/// <summary>
 		/// -e|--entry-file &lt;arg&gt;
-		/// Path to the app&#39;s entry Javascript file. If omitted, &quot;index.&lt;platform&gt;.js&quot; and then &quot;index.js&quot; will be used (if they exist)
+		/// Path to the app&#39;s entry JavaScript file. If omitted, &quot;index.&lt;platform&gt;.js&quot; and then &quot;index.js&quot; will be used (if they exist)
 		/// </summary>
 		public string EntryFile { get; set; }
 		/// <summary>

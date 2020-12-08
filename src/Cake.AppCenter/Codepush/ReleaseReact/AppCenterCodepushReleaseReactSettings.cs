@@ -41,6 +41,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		public string SourcemapOutput { get; set; }
 		/// <summary>
+		/// -c|--build-configuration-name &lt;arg&gt;
+		/// Name of build configuration which specifies the binary version you want to target this release at. For example, &quot;Debug&quot; or &quot;Release&quot; (iOS only)
+		/// </summary>
+		public string BuildConfigurationName { get; set; }
+		/// <summary>
 		/// --plist-file-prefix &lt;arg&gt;
 		/// Prefix to append to the file name when attempting to find your app&#39;s Info.plist file (iOS only)
 		/// </summary>
@@ -57,7 +62,7 @@ namespace Cake.AppCenter
 		public string GradleFile { get; set; }
 		/// <summary>
 		/// -e|--entry-file &lt;arg&gt;
-		/// Path to the app&#39;s entry Javascript file. If omitted, &quot;index.&lt;platform&gt;.js&quot; and then &quot;index.js&quot; will be used (if they exist)
+		/// Path to the app&#39;s entry JavaScript file. If omitted, &quot;index.&lt;platform&gt;.js&quot; and then &quot;index.js&quot; will be used (if they exist)
 		/// </summary>
 		public string EntryFile { get; set; }
 		/// <summary>
