@@ -12,9 +12,14 @@ namespace Cake.AppCenter
 	{
 		/// <summary>
 		/// -b|--branch &lt;arg&gt;
-		/// Branch to be build
+		/// Branch to be built
 		/// </summary>
 		public string Branch { get; set; }
+		/// <summary>
+		/// -s|--source-version &lt;arg&gt;
+		/// Source control version reference
+		/// </summary>
+		public string SourceVersion { get; set; }
 		/// <summary>
 		/// -d|--debug-logs
 		/// Enable debug mode

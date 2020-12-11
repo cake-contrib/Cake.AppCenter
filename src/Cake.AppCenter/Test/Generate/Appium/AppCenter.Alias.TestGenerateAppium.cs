@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Test")] 
 		public static void AppCenterTestGenerateAppium(this ICakeContext context, AppCenterTestGenerateAppiumSettings settings)
 		{
 			if (context == null)
@@ -33,6 +34,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Test")] 
 		public static IEnumerable<string> AppCenterTestGenerateAppiumWithResult(this ICakeContext context, AppCenterTestGenerateAppiumSettings settings)
 		{
 			if (context == null)

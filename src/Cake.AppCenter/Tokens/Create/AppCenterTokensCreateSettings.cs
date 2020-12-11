@@ -11,10 +11,20 @@ namespace Cake.AppCenter
 	public sealed class AppCenterTokensCreateSettings : AutoToolSettings
 	{
 		/// <summary>
+		/// -t|--type &lt;arg&gt;
+		/// The type of token: [ user, app ]. An app must be specified for app type tokens
+		/// </summary>
+		public string Type { get; set; }
+		/// <summary>
 		/// -d|--description &lt;arg&gt;
 		/// Description of the API token
 		/// </summary>
 		public string Description { get; set; }
+		/// <summary>
+		/// -a|--app &lt;arg&gt;
+		/// Specify app in the &lt;ownerName&gt;/&lt;appName&gt; format
+		/// </summary>
+		public string App { get; set; }
 		/// <summary>
 		/// --disable-telemetry
 		/// Disable telemetry for this command

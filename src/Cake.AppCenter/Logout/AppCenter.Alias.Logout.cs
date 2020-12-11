@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Logout")] 
 		public static void AppCenterLogout(this ICakeContext context, AppCenterLogoutSettings settings)
 		{
 			if (context == null)
@@ -33,6 +34,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Logout")] 
 		public static IEnumerable<string> AppCenterLogoutWithResult(this ICakeContext context, AppCenterLogoutSettings settings)
 		{
 			if (context == null)

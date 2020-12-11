@@ -5,7 +5,7 @@ namespace Cake.AppCenter
 {
 	/// <summary>
 	/// Settings for appcenter test download.
-	/// Download the report artifacts, unpack and merge them..
+	/// Download the report artifacts, unpack and merge them. This command is only available for UITest and Appium test runs..
 	/// </summary>
 	[CompilerGenerated]
 	public sealed class AppCenterTestDownloadSettings : AutoToolSettings

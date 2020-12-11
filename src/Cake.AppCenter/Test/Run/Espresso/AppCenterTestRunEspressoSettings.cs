@@ -26,11 +26,6 @@ namespace Cake.AppCenter
 		/// </summary>
 		public string BuildDir { get; set; }
 		/// <summary>
-		/// --test-output-dir &lt;arg&gt;
-		/// Path to the directory for test results. This parameter won&#39;t work when you run using --async because we have to wait for test results. The results will be saved in the working directory if the relative path is specified
-		/// </summary>
-		public string TestOutputDir { get; set; }
-		/// <summary>
 		/// --vsts-id-variable &lt;arg&gt;
 		/// Outputs the Test Run Id to the named VSTS variable
 		/// </summary>
@@ -52,7 +47,7 @@ namespace Cake.AppCenter
 		public string TestParameter { get; set; }
 		/// <summary>
 		/// --include &lt;arg&gt;
-		/// Additional files and directories to include. The value must be either path relative to the input directory, or be in format &quot;targetDir=sourceDir&quot;
+		/// Attribute is not supported for Espresso
 		/// </summary>
 		public string Include { get; set; }
 		/// <summary>
@@ -72,7 +67,7 @@ namespace Cake.AppCenter
 		public string Locale { get; set; }
 		/// <summary>
 		/// --dsym-dir &lt;arg&gt;
-		/// Path to the directory with iOS symbol files
+		/// Path to the directory with iOS symbol files. This option is deprecated and ignored
 		/// </summary>
 		public string DsymDir { get; set; }
 		/// <summary>

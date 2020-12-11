@@ -5,7 +5,7 @@ namespace Cake.AppCenter
 {
 	/// <summary>
 	/// Settings for appcenter apps set-current.
-	/// Set default application for all CLI commands.
+	/// Set default application for all CLI commands. Not compatible when authenticating with &#39;--token&#39; or an environment variable. Use environment variable &#39;MOBILE_CENTER_CURRENT_APP&#39; to set the default app instead..
 	/// </summary>
 	[CompilerGenerated]
 	public sealed class AppCenterAppsSetCurrentSettings : AutoToolSettings

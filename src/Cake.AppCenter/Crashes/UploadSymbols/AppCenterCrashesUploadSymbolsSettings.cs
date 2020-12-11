@@ -11,8 +11,18 @@ namespace Cake.AppCenter
 	public sealed class AppCenterCrashesUploadSymbolsSettings : AutoToolSettings
 	{
 		/// <summary>
+		/// --appxsym &lt;arg&gt;
+		/// Path to an appxsym file containing UWP symbols.
+		/// </summary>
+		public string Appxsym { get; set; }
+		/// <summary>
+		/// -b|--breakpad &lt;arg&gt;
+		/// Path to a zip file containing Breakpad symbols, or native binaries from which to generate Breakpad symbols.
+		/// </summary>
+		public string Breakpad { get; set; }
+		/// <summary>
 		/// -m|--sourcemap &lt;arg&gt;
-		/// Path to a React Native sourcemap file. Only supported in combination with --symbol or --xcarchive
+		/// Path to a React Native sourcemap file. Only supported in combination with --symbol or --xcarchive.
 		/// </summary>
 		public string Sourcemap { get; set; }
 		/// <summary>

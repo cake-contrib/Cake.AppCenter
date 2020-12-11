@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Crashes")] 
 		public static void AppCenterCrashesUploadMissingSymbols(this ICakeContext context, AppCenterCrashesUploadMissingSymbolsSettings settings, string searchPath)
 		{
 			if (context == null)
@@ -37,6 +38,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Crashes")] 
 		public static IEnumerable<string> AppCenterCrashesUploadMissingSymbolsWithResult(this ICakeContext context, AppCenterCrashesUploadMissingSymbolsSettings settings, string searchPath)
 		{
 			if (context == null)

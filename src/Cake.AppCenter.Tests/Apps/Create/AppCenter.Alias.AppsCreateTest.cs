@@ -1,6 +1,8 @@
 ﻿using Cake.AppCenter;
+using Cake.Core;
 using NUnit.Framework;
 using System;
+using System.Linq;
 
 namespace Cake.MobilityCenter.Tests.Apps.Create
 {
@@ -17,6 +19,20 @@ namespace Cake.MobilityCenter.Tests.Apps.Create
 
             var actual = fixture.Run();
             Assert.That(actual.Args, Is.EqualTo("apps create --platform \"x86\" --token \"AlfaBeta\""));
+        }
+
+        [Test]
+        public void WhenArgumentCustomizationIsUsed_CommandLineIsCorrect()
+        {
+            var fixture = new AppCenterAppsCreateFixture
+            {
+                Settings = new AppCenterAppsCreateSettings { Platform = "x86", Token = "AlfaBeta", 
+                    ArgumentCustomization = args => args.Append("--debug")
+                }
+            };
+
+            var actual = fixture.Run();
+            Assert.That(actual.Args, Is.EqualTo("apps create --platform \"x86\" --token \"AlfaBeta\" --debug"));
         }
     }
 }

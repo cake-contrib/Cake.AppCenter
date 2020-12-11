@@ -32,7 +32,7 @@ namespace Cake.AppCenter
 		public string TestParameter { get; set; }
 		/// <summary>
 		/// --include &lt;arg&gt;
-		/// Additional files and directories to include. The value must be either path relative to the input directory, or be in format &quot;targetDir=sourceDir&quot;
+		/// Attribute is not supported for XCUITest
 		/// </summary>
 		public string Include { get; set; }
 		/// <summary>

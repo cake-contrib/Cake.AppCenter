@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Test")] 
 		public static void AppCenterTestRunUitest(this ICakeContext context, AppCenterTestRunUitestSettings settings)
 		{
 			if (context == null)
@@ -33,6 +34,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Test")] 
 		public static IEnumerable<string> AppCenterTestRunUitestWithResult(this ICakeContext context, AppCenterTestRunUitestSettings settings)
 		{
 			if (context == null)

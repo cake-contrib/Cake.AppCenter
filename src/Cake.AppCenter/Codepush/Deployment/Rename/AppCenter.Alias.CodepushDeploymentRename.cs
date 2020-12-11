@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Codepush")] 
 		public static void AppCenterCodepushDeploymentRename(this ICakeContext context, AppCenterCodepushDeploymentRenameSettings settings, string currentDeploymentName, string newDeploymentName)
 		{
 			if (context == null)
@@ -41,6 +42,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Codepush")] 
 		public static IEnumerable<string> AppCenterCodepushDeploymentRenameWithResult(this ICakeContext context, AppCenterCodepushDeploymentRenameSettings settings, string currentDeploymentName, string newDeploymentName)
 		{
 			if (context == null)

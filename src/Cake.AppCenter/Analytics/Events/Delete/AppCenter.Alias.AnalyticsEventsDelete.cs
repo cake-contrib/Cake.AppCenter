@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Analytics")] 
 		public static void AppCenterAnalyticsEventsDelete(this ICakeContext context, AppCenterAnalyticsEventsDeleteSettings settings)
 		{
 			if (context == null)
@@ -33,6 +34,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Analytics")] 
 		public static IEnumerable<string> AppCenterAnalyticsEventsDeleteWithResult(this ICakeContext context, AppCenterAnalyticsEventsDeleteSettings settings)
 		{
 			if (context == null)

@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Build")] 
 		public static void AppCenterBuildBranchesShow(this ICakeContext context, AppCenterBuildBranchesShowSettings settings)
 		{
 			if (context == null)
@@ -33,6 +34,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Build")] 
 		public static IEnumerable<string> AppCenterBuildBranchesShowWithResult(this ICakeContext context, AppCenterBuildBranchesShowSettings settings)
 		{
 			if (context == null)

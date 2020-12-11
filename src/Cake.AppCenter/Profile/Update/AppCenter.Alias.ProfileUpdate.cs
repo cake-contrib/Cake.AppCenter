@@ -14,6 +14,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         
 		[CakeMethodAlias]
+        [CakeAliasCategory("Profile")] 
 		public static void AppCenterProfileUpdate(this ICakeContext context, AppCenterProfileUpdateSettings settings)
 		{
 			if (context == null)
@@ -33,6 +34,7 @@ namespace Cake.AppCenter
 		/// <param name="settings">The settings.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
+        [CakeAliasCategory("Profile")] 
 		public static IEnumerable<string> AppCenterProfileUpdateWithResult(this ICakeContext context, AppCenterProfileUpdateSettings settings)
 		{
 			if (context == null)
