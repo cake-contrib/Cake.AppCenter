@@ -8,11 +8,13 @@ A Cake AddIn that extends Cake with [AppCenter](https://github.com/Microsoft/app
 
 ## Important
 
+1.3.1 References Cake 1.0.0
+
 1.3.0 Supports AppCenter 2.7.3
 
-1.2.0 Supports Cake 0.33
+1.2.0 References Cake 0.33
 
-1.0.0 Supports Cake 0.26 and .NET Standard 2.0.
+1.0.0 References Cake 0.26 and .NET Standard 2.0.
 
 ## Requirements
 
