@@ -26,7 +26,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(deploymentName));
             }
             var arguments = new string[] { deploymentName };
-            var runner = new GenericRunner<AppCenterCodepushPatchSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterCodepushPatchSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			 runner.Run("codepush patch", settings ?? new AppCenterCodepushPatchSettings(), arguments);
 		}
 
@@ -50,7 +50,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(deploymentName));
             }
             var arguments = new string[] { deploymentName };
-            var runner = new GenericRunner<AppCenterCodepushPatchSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterCodepushPatchSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			return runner.RunWithResult("codepush patch", settings ?? new AppCenterCodepushPatchSettings(), arguments);
 		}
 

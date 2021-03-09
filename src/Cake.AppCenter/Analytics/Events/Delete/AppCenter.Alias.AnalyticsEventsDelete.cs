@@ -22,7 +22,7 @@ namespace Cake.AppCenter
 				throw new ArgumentNullException("context");
 			}
                  var arguments = new string[0];
-            var runner = new GenericRunner<AppCenterAnalyticsEventsDeleteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterAnalyticsEventsDeleteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			 runner.Run("analytics events delete", settings ?? new AppCenterAnalyticsEventsDeleteSettings(), arguments);
 		}
 
@@ -42,7 +42,7 @@ namespace Cake.AppCenter
 				throw new ArgumentNullException("context");
 			}
                  var arguments = new string[0];
-            var runner = new GenericRunner<AppCenterAnalyticsEventsDeleteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterAnalyticsEventsDeleteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			return runner.RunWithResult("analytics events delete", settings ?? new AppCenterAnalyticsEventsDeleteSettings(), arguments);
 		}
 

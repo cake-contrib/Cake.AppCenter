@@ -26,7 +26,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(token));
             }
             var arguments = new string[] { token };
-            var runner = new GenericRunner<AppCenterTokensDeleteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterTokensDeleteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			 runner.Run("tokens delete", settings ?? new AppCenterTokensDeleteSettings(), arguments);
 		}
 
@@ -50,7 +50,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(token));
             }
             var arguments = new string[] { token };
-            var runner = new GenericRunner<AppCenterTokensDeleteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterTokensDeleteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			return runner.RunWithResult("tokens delete", settings ?? new AppCenterTokensDeleteSettings(), arguments);
 		}
 

@@ -22,7 +22,7 @@ namespace Cake.AppCenter
 				throw new ArgumentNullException("context");
 			}
                  var arguments = new string[0];
-            var runner = new GenericRunner<AppCenterLoginSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterLoginSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			 runner.Run("login", settings ?? new AppCenterLoginSettings(), arguments);
 		}
 
@@ -42,7 +42,7 @@ namespace Cake.AppCenter
 				throw new ArgumentNullException("context");
 			}
                  var arguments = new string[0];
-            var runner = new GenericRunner<AppCenterLoginSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterLoginSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			return runner.RunWithResult("login", settings ?? new AppCenterLoginSettings(), arguments);
 		}
 
