@@ -22,7 +22,7 @@ namespace Cake.AppCenter
 				throw new ArgumentNullException("context");
 			}
                  var arguments = new string[0];
-            var runner = new GenericRunner<AppCenterTokensCreateSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
+            var runner = new GenericRunner<AppCenterTokensCreateSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
 			 runner.Run("tokens create", settings ?? new AppCenterTokensCreateSettings(), arguments);
 		}
 
@@ -42,7 +42,7 @@ namespace Cake.AppCenter
 				throw new ArgumentNullException("context");
 			}
                  var arguments = new string[0];
-            var runner = new GenericRunner<AppCenterTokensCreateSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
+            var runner = new GenericRunner<AppCenterTokensCreateSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
 			return runner.RunWithResult("tokens create", settings ?? new AppCenterTokensCreateSettings(), arguments);
 		}
 

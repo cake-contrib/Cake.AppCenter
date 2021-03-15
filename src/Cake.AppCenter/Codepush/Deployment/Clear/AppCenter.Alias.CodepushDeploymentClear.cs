@@ -26,7 +26,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(deploymentName));
             }
             var arguments = new string[] { deploymentName };
-            var runner = new GenericRunner<AppCenterCodepushDeploymentClearSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
+            var runner = new GenericRunner<AppCenterCodepushDeploymentClearSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
 			 runner.Run("codepush deployment clear", settings ?? new AppCenterCodepushDeploymentClearSettings(), arguments);
 		}
 
@@ -50,7 +50,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(deploymentName));
             }
             var arguments = new string[] { deploymentName };
-            var runner = new GenericRunner<AppCenterCodepushDeploymentClearSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
+            var runner = new GenericRunner<AppCenterCodepushDeploymentClearSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
 			return runner.RunWithResult("codepush deployment clear", settings ?? new AppCenterCodepushDeploymentClearSettings(), arguments);
 		}
 

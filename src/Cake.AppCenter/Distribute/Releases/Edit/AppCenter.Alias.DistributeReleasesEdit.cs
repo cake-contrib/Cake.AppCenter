@@ -26,7 +26,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(state));
             }
             var arguments = new string[] { state };
-            var runner = new GenericRunner<AppCenterDistributeReleasesEditSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
+            var runner = new GenericRunner<AppCenterDistributeReleasesEditSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
 			 runner.Run("distribute releases edit", settings ?? new AppCenterDistributeReleasesEditSettings(), arguments);
 		}
 
@@ -50,7 +50,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(state));
             }
             var arguments = new string[] { state };
-            var runner = new GenericRunner<AppCenterDistributeReleasesEditSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
+            var runner = new GenericRunner<AppCenterDistributeReleasesEditSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
 			return runner.RunWithResult("distribute releases edit", settings ?? new AppCenterDistributeReleasesEditSettings(), arguments);
 		}
 

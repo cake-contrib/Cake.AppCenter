@@ -26,7 +26,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(searchPath));
             }
             var arguments = new string[] { searchPath };
-            var runner = new GenericRunner<AppCenterCrashesUploadMissingSymbolsSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
+            var runner = new GenericRunner<AppCenterCrashesUploadMissingSymbolsSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
 			 runner.Run("crashes upload-missing-symbols", settings ?? new AppCenterCrashesUploadMissingSymbolsSettings(), arguments);
 		}
 
@@ -50,7 +50,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(searchPath));
             }
             var arguments = new string[] { searchPath };
-            var runner = new GenericRunner<AppCenterCrashesUploadMissingSymbolsSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
+            var runner = new GenericRunner<AppCenterCrashesUploadMissingSymbolsSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
 			return runner.RunWithResult("crashes upload-missing-symbols", settings ?? new AppCenterCrashesUploadMissingSymbolsSettings(), arguments);
 		}
 
