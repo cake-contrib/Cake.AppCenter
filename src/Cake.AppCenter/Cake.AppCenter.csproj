@@ -11,7 +11,7 @@
     <PackageId>Cake.AppCenter</PackageId>
     <Title>Cake.AppCenter</Title>
     <Description>AppCenter Addin for Cake Build, Test and Deployment Automation System.</Description>
-    <PackageTags>Cake Script Build Test Deploy AppCenter Deployment</PackageTags>
+    <PackageTags>Cake Script Build Test Deploy AppCenter Deployment cake-addin</PackageTags>
     <Authors>Miha Markic</Authors>
     <Owners>Miha Markic, cake-contrib</Owners>
     <RepositoryUrl>https://github.com/cake-contrib/Cake.AppCenter.git</RepositoryUrl>
