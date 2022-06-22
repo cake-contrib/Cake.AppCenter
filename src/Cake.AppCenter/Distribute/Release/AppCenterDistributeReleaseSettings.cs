@@ -27,12 +27,12 @@ namespace Cake.AppCenter
 		public bool? Silent { get; set; }
 		/// <summary>
 		/// -R|--release-notes-file &lt;arg&gt;
-		/// Path to release notes file
+		/// Path to release notes file (markdown supported, 5000 characters max)
 		/// </summary>
 		public string ReleaseNotesFile { get; set; }
 		/// <summary>
 		/// -r|--release-notes &lt;arg&gt;
-		/// Release notes text
+		/// Release notes text (5000 characters max)
 		/// </summary>
 		public string ReleaseNotes { get; set; }
 		/// <summary>
@@ -42,7 +42,7 @@ namespace Cake.AppCenter
 		public string Store { get; set; }
 		/// <summary>
 		/// -g|--group &lt;arg&gt;
-		/// Distribution group name
+		/// Comma-separated distribution group names
 		/// </summary>
 		public string Group { get; set; }
 		/// <summary>

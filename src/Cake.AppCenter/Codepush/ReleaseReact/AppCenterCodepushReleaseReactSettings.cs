@@ -51,10 +51,20 @@ namespace Cake.AppCenter
 		/// </summary>
 		public string PlistFilePrefix { get; set; }
 		/// <summary>
+		/// -xp|--xcode-project-file &lt;arg&gt;
+		/// Path to the Xcode project or project.pbxproj file
+		/// </summary>
+		public string XcodeProjectFile { get; set; }
+		/// <summary>
 		/// -p|--plist-file &lt;arg&gt;
 		/// Path to the plist file which specifies the binary version you want to target this release at (iOS only)
 		/// </summary>
 		public string PlistFile { get; set; }
+		/// <summary>
+		/// --pod-file &lt;arg&gt;
+		/// Path to the cocopods config file (iOS only)
+		/// </summary>
+		public string PodFile { get; set; }
 		/// <summary>
 		/// -g|--gradle-file &lt;arg&gt;
 		/// Path to the gradle file which specifies the binary version you want to target this release at (android only)
