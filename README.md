@@ -8,10 +8,10 @@ A Cake AddIn that extends Cake with [AppCenter](https://github.com/Microsoft/app
 
 ## Important
 
-1.3.2 
-	- Supports AppCenter 2.10.10
-	- References Cake 2.0.0
-	- Drops support for .NET Framework
+1.4.0 
+* Supports AppCenter 2.10.10
+* References Cake 2.0.0
+* Drops support for .NET Framework
 
 1.3.1 References Cake 1.0.0
 
