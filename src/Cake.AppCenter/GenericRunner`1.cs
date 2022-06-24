@@ -1,4 +1,5 @@
 ﻿using Cake.Core;
+using Cake.Core.Diagnostics;
 using Cake.Core.IO;
 using Cake.Core.Tooling;
 using System;
@@ -13,6 +14,7 @@ namespace Cake.AppCenter
     public class GenericRunner<TSettings> : AppCenterTool<TSettings>
         where TSettings : AutoToolSettings, new()
     {
+        readonly ICakeLog log;
         /// <summary>
         /// 
         /// </summary>
@@ -20,9 +22,10 @@ namespace Cake.AppCenter
         /// <param name="environment"></param>
         /// <param name="processRunner"></param>
         /// <param name="tools"></param>
-        public GenericRunner(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IToolLocator tools)
+        public GenericRunner(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IToolLocator tools, ICakeLog log)
             : base(fileSystem, environment, processRunner, tools)
         {
+            this.log = log ?? throw new ArgumentNullException(nameof(log));
         }
 
         /// <summary>
@@ -68,7 +71,13 @@ namespace Cake.AppCenter
             {
                 throw new ArgumentNullException(nameof(additional));
             }
-            var process  = RunProcess(settings, GetArguments(command, settings, additional), new ProcessSettings { RedirectStandardError = false, RedirectStandardOutput = true });
+            var process  = RunProcess(settings, GetArguments(command, settings, additional), 
+                new ProcessSettings {
+                    RedirectStandardError = true,
+                    RedirectStandardOutput = true,
+                    RedirectedStandardErrorHandler = HandleStandardError,
+                    RedirectedStandardOutputHandler = HandleStandardOutput,
+                });
             process.WaitForExit();
             ProcessExitCode(process.GetExitCode());
             return process.GetStandardOutput(); ;
@@ -79,6 +88,23 @@ namespace Cake.AppCenter
             var builder = new ProcessArgumentBuilder();
             builder.AppendAll(command, settings, containers);
             return builder;
+        }
+        string HandleStandardError(string error)
+        {
+            if (!string.IsNullOrWhiteSpace(error))
+            {
+                log.Error(error);
+            }
+            return error;
+        }
+
+        string HandleStandardOutput(string output)
+        {
+            if (!string.IsNullOrWhiteSpace(output))
+            {
+                log.Debug(output);
+            }
+            return output;
         }
     }
 }
