@@ -22,6 +22,7 @@ namespace Cake.AppCenter
         /// <param name="environment"></param>
         /// <param name="processRunner"></param>
         /// <param name="tools"></param>
+        /// <param name="log"></param>
         public GenericRunner(IFileSystem fileSystem, ICakeEnvironment environment, IProcessRunner processRunner, IToolLocator tools, ICakeLog log)
             : base(fileSystem, environment, processRunner, tools)
         {
