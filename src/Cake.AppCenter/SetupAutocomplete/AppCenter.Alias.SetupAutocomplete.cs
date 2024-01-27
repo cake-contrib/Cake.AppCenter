@@ -12,10 +12,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="shellProfilePath">The shellProfilePath.</param>
         
 		[CakeMethodAlias]
         [CakeAliasCategory("Setup Autocomplete")] 
-		public static void AppCenterSetupAutocomplete(this ICakeContext context, AppCenterSetupAutocompleteSettings settings, string shellProfilePath)
+		public static void AppCenterSetupAutocomplete(this ICakeContext context, AppCenterSetupAutocompleteSettings settings, string? shellProfilePath)
 		{
 			if (context == null)
 			{
@@ -36,10 +37,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="shellProfilePath">The shellProfilePath.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
         [CakeAliasCategory("Setup Autocomplete")] 
-		public static IEnumerable<string> AppCenterSetupAutocompleteWithResult(this ICakeContext context, AppCenterSetupAutocompleteSettings settings, string shellProfilePath)
+		public static IEnumerable<string> AppCenterSetupAutocompleteWithResult(this ICakeContext context, AppCenterSetupAutocompleteSettings settings, string? shellProfilePath)
 		{
 			if (context == null)
 			{

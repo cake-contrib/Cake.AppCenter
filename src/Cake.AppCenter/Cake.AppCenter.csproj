@@ -3,12 +3,13 @@
   <PropertyGroup>
     <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <PropertyGroup>
     <PackageId>Cake.AppCenter</PackageId>
     <Title>Cake.AppCenter</Title>
-    <PackageTags>Cake Script Build Test Deploy AppCenter Deployment cake-addin</PackageTags>
+    <PackageTags>Cake Script Build Test Deploy AppCenter Deployment cake-addin addin cake-build</PackageTags>
     <Authors>Miha Markic</Authors>
     <Owners>Miha Markic, cake-contrib</Owners>
     <Description>AppCenter Addin for Cake Build, Test and Deployment Automation System.</Description>

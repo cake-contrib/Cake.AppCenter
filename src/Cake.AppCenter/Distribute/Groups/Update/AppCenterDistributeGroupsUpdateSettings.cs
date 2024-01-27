@@ -14,7 +14,7 @@ namespace Cake.AppCenter
 		/// -g|--group &lt;arg&gt;
 		/// Distribution group name
 		/// </summary>
-		public string Group { get; set; }
+		public string? Group { get; set; }
 		/// <summary>
 		/// --private
 		/// Make the distribution group private (allowing only members to download the releases). Don&#39;t use with opposite --public.
@@ -29,32 +29,32 @@ namespace Cake.AppCenter
 		/// -D|--delete-testers-file &lt;arg&gt;
 		/// Path to file containing list of testers to delete
 		/// </summary>
-		public string DeleteTestersFile { get; set; }
+		public string? DeleteTestersFile { get; set; }
 		/// <summary>
 		/// -T|--add-testers-file &lt;arg&gt;
 		/// Path to file containing list of testers to add
 		/// </summary>
-		public string AddTestersFile { get; set; }
+		public string? AddTestersFile { get; set; }
 		/// <summary>
 		/// -d|--delete-testers &lt;arg&gt;
 		/// List of testers to delete (use space-separated list of e-mails)
 		/// </summary>
-		public string DeleteTesters { get; set; }
+		public string? DeleteTesters { get; set; }
 		/// <summary>
 		/// -t|--add-testers &lt;arg&gt;
 		/// List of testers to add (use space-separated list of e-mails)
 		/// </summary>
-		public string AddTesters { get; set; }
+		public string? AddTesters { get; set; }
 		/// <summary>
 		/// -n|--name &lt;arg&gt;
 		/// New distribution group name
 		/// </summary>
-		public string Name { get; set; }
+		public string? Name { get; set; }
 		/// <summary>
 		/// -a|--app &lt;arg&gt;
 		/// Specify app in the &lt;ownerName&gt;/&lt;appName&gt; format
 		/// </summary>
-		public string App { get; set; }
+		public string? App { get; set; }
 		/// <summary>
 		/// --disable-telemetry
 		/// Disable telemetry for this command
@@ -79,17 +79,17 @@ namespace Cake.AppCenter
 		/// --env &lt;arg&gt;
 		/// Environment when using API token
 		/// </summary>
-		public string Env { get; set; }
+		public string? Env { get; set; }
 		/// <summary>
 		/// --token &lt;arg&gt;
 		/// API token
 		/// </summary>
-		public string Token { get; set; }
+		public string? Token { get; set; }
 		/// <summary>
 		/// --output &lt;arg&gt;
 		/// Output format: json
 		/// </summary>
-		public string Output { get; set; }
+		public string? Output { get; set; }
 		/// <summary>
 		/// --debug
 		/// Display extra output for debugging

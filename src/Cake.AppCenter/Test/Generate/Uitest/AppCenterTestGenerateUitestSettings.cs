@@ -14,12 +14,12 @@ namespace Cake.AppCenter
 		/// --output-path &lt;arg&gt;
 		/// The path where the tests will be generated
 		/// </summary>
-		public string OutputPath { get; set; }
+		public string? OutputPath { get; set; }
 		/// <summary>
 		/// --platform &lt;arg&gt;
 		/// The app&#39;s platform (&#39;ios&#39; or &#39;android&#39;)
 		/// </summary>
-		public string Platform { get; set; }
+		public string? Platform { get; set; }
 		/// <summary>
 		/// --disable-telemetry
 		/// Disable telemetry for this command
@@ -44,17 +44,17 @@ namespace Cake.AppCenter
 		/// --env &lt;arg&gt;
 		/// Environment when using API token
 		/// </summary>
-		public string Env { get; set; }
+		public string? Env { get; set; }
 		/// <summary>
 		/// --token &lt;arg&gt;
 		/// API token
 		/// </summary>
-		public string Token { get; set; }
+		public string? Token { get; set; }
 		/// <summary>
 		/// --output &lt;arg&gt;
 		/// Output format: json
 		/// </summary>
-		public string Output { get; set; }
+		public string? Output { get; set; }
 		/// <summary>
 		/// --debug
 		/// Display extra output for debugging

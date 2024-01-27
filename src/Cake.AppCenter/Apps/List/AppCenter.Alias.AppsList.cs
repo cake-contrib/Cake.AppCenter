@@ -13,6 +13,7 @@ namespace Cake.AppCenter
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
         
+        
 		[CakeMethodAlias]
         [CakeAliasCategory("Apps")] 
 		public static void AppCenterAppsList(this ICakeContext context, AppCenterAppsListSettings settings)
@@ -32,6 +33,7 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
         [CakeAliasCategory("Apps")] 

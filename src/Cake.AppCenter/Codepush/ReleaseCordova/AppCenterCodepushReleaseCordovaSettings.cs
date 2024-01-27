@@ -14,7 +14,7 @@ namespace Cake.AppCenter
 		/// -t|--target-binary-version &lt;arg&gt;
 		/// Semver expression that specifies the binary app version(s) this release is targeting (e.g. 1.1.0, ~1.2.3)
 		/// </summary>
-		public string TargetBinaryVersion { get; set; }
+		public string? TargetBinaryVersion { get; set; }
 		/// <summary>
 		/// --is-release-build-type
 		/// If &quot;build&quot; option is true specifies whether perform a release build
@@ -29,7 +29,7 @@ namespace Cake.AppCenter
 		/// -r|--rollout &lt;arg&gt;
 		/// Percentage of users this release should be available to
 		/// </summary>
-		public string Rollout { get; set; }
+		public string? Rollout { get; set; }
 		/// <summary>
 		/// --disable-duplicate-release-error
 		/// When this flag is set, releasing a package that is identical to the latest release will produce a warning instead of an error
@@ -39,7 +39,7 @@ namespace Cake.AppCenter
 		/// -k|--private-key-path &lt;arg&gt;
 		/// Specifies the location of a RSA private key to sign the release with.NOTICE: use it for react native applications only, client SDK on other platforms will be ignoring signature verification for now!
 		/// </summary>
-		public string PrivateKeyPath { get; set; }
+		public string? PrivateKeyPath { get; set; }
 		/// <summary>
 		/// -m|--mandatory
 		/// Specifies whether this release should be considered mandatory
@@ -54,17 +54,17 @@ namespace Cake.AppCenter
 		/// --description &lt;arg&gt;
 		/// Description of the changes made to the app in this release
 		/// </summary>
-		public string Description { get; set; }
+		public string? Description { get; set; }
 		/// <summary>
 		/// -d|--deployment-name &lt;arg&gt;
 		/// Deployment to release the update to
 		/// </summary>
-		public string DeploymentName { get; set; }
+		public string? DeploymentName { get; set; }
 		/// <summary>
 		/// -a|--app &lt;arg&gt;
 		/// Specify app in the &lt;ownerName&gt;/&lt;appName&gt; format
 		/// </summary>
-		public string App { get; set; }
+		public string? App { get; set; }
 		/// <summary>
 		/// --disable-telemetry
 		/// Disable telemetry for this command
@@ -89,17 +89,17 @@ namespace Cake.AppCenter
 		/// --env &lt;arg&gt;
 		/// Environment when using API token
 		/// </summary>
-		public string Env { get; set; }
+		public string? Env { get; set; }
 		/// <summary>
 		/// --token &lt;arg&gt;
 		/// API token
 		/// </summary>
-		public string Token { get; set; }
+		public string? Token { get; set; }
 		/// <summary>
 		/// --output &lt;arg&gt;
 		/// Output format: json
 		/// </summary>
-		public string Output { get; set; }
+		public string? Output { get; set; }
 		/// <summary>
 		/// --debug
 		/// Display extra output for debugging

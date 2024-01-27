@@ -12,10 +12,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="state">The state.</param>
         
 		[CakeMethodAlias]
         [CakeAliasCategory("Distribute")] 
-		public static void AppCenterDistributeReleasesEdit(this ICakeContext context, AppCenterDistributeReleasesEditSettings settings, string state)
+		public static void AppCenterDistributeReleasesEdit(this ICakeContext context, AppCenterDistributeReleasesEditSettings settings, string? state)
 		{
 			if (context == null)
 			{
@@ -36,10 +37,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="state">The state.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
         [CakeAliasCategory("Distribute")] 
-		public static IEnumerable<string> AppCenterDistributeReleasesEditWithResult(this ICakeContext context, AppCenterDistributeReleasesEditSettings settings, string state)
+		public static IEnumerable<string> AppCenterDistributeReleasesEditWithResult(this ICakeContext context, AppCenterDistributeReleasesEditSettings settings, string? state)
 		{
 			if (context == null)
 			{

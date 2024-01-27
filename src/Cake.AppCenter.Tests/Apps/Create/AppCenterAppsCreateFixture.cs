@@ -1,10 +1,5 @@
-﻿using System;
-using Cake.AppCenter;
-using Cake.Core;
-using Cake.Core.Configuration;
-using Cake.Core.Diagnostics;
-using Cake.Core.IO;
-using Cake.Testing.Fixtures;
+﻿using Cake.AppCenter;
+using Cake.Testing;
 
 namespace Cake.MobilityCenter.Tests.Apps.Create
 {
@@ -13,7 +8,7 @@ namespace Cake.MobilityCenter.Tests.Apps.Create
         public string[] Services { get; set; } = new string[0];
         IFileSystem ICakeContext.FileSystem => FileSystem;
         ICakeEnvironment ICakeContext.Environment => Environment;
-        public ICakeLog Log => Log;
+        ICakeLog ICakeContext.Log { get; } = new FakeLog();
         ICakeArguments ICakeContext.Arguments => throw new NotImplementedException();
         IProcessRunner ICakeContext.ProcessRunner => ProcessRunner;
         public IRegistry Registry => Registry;

@@ -14,27 +14,27 @@ namespace Cake.AppCenter
 		/// --artifacts-dir &lt;arg&gt;
 		/// Path to the artifacts directory to create
 		/// </summary>
-		public string ArtifactsDir { get; set; }
+		public string? ArtifactsDir { get; set; }
 		/// <summary>
 		/// --test-apk-path &lt;arg&gt;
 		/// Path to the *.apk file with the Espresso tests. If not set, build-dir is used to discover it
 		/// </summary>
-		public string TestApkPath { get; set; }
+		public string? TestApkPath { get; set; }
 		/// <summary>
 		/// --build-dir &lt;arg&gt;
 		/// Path to the Espresso output directory (usually &lt;project&gt;/build/outputs/apk)
 		/// </summary>
-		public string BuildDir { get; set; }
+		public string? BuildDir { get; set; }
 		/// <summary>
 		/// -p|--test-parameter &lt;arg&gt;
 		/// Additional test parameters. The value must be in format &quot;key=value&quot;
 		/// </summary>
-		public string TestParameter { get; set; }
+		public string? TestParameter { get; set; }
 		/// <summary>
 		/// --include &lt;arg&gt;
 		/// Attribute is not supported for Espresso
 		/// </summary>
-		public string Include { get; set; }
+		public string? Include { get; set; }
 		/// <summary>
 		/// --disable-telemetry
 		/// Disable telemetry for this command
@@ -59,17 +59,17 @@ namespace Cake.AppCenter
 		/// --env &lt;arg&gt;
 		/// Environment when using API token
 		/// </summary>
-		public string Env { get; set; }
+		public string? Env { get; set; }
 		/// <summary>
 		/// --token &lt;arg&gt;
 		/// API token
 		/// </summary>
-		public string Token { get; set; }
+		public string? Token { get; set; }
 		/// <summary>
 		/// --output &lt;arg&gt;
 		/// Output format: json
 		/// </summary>
-		public string Output { get; set; }
+		public string? Output { get; set; }
 		/// <summary>
 		/// --debug
 		/// Display extra output for debugging

@@ -13,6 +13,7 @@ namespace Cake.AppCenter
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
         
+        
 		[CakeMethodAlias]
         [CakeAliasCategory("Tokens")] 
 		public static void AppCenterTokensList(this ICakeContext context, AppCenterTokensListSettings settings)
@@ -32,6 +33,7 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
         [CakeAliasCategory("Tokens")] 

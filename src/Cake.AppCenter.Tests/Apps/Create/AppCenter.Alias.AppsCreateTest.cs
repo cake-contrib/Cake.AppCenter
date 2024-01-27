@@ -1,8 +1,4 @@
 ﻿using Cake.AppCenter;
-using Cake.Core;
-using NUnit.Framework;
-using System;
-using System.Linq;
 
 namespace Cake.MobilityCenter.Tests.Apps.Create
 {

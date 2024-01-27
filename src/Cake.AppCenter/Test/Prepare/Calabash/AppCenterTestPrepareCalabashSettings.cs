@@ -14,12 +14,12 @@ namespace Cake.AppCenter
 		/// --app-path &lt;arg&gt;
 		/// Path to an application file
 		/// </summary>
-		public string AppPath { get; set; }
+		public string? AppPath { get; set; }
 		/// <summary>
 		/// --artifacts-dir &lt;arg&gt;
 		/// Path to the artifacts directory to create
 		/// </summary>
-		public string ArtifactsDir { get; set; }
+		public string? ArtifactsDir { get; set; }
 		/// <summary>
 		/// --skip-config-check
 		/// Force running without Cucumber profile
@@ -29,42 +29,42 @@ namespace Cake.AppCenter
 		/// --profile &lt;arg&gt;
 		/// Profile to run. It must exist in the configuration file
 		/// </summary>
-		public string Profile { get; set; }
+		public string? Profile { get; set; }
 		/// <summary>
 		/// --config-path &lt;arg&gt;
 		/// Path to the Cucumber configuration file (usually cucumber.yml)
 		/// </summary>
-		public string ConfigPath { get; set; }
+		public string? ConfigPath { get; set; }
 		/// <summary>
 		/// --config &lt;arg&gt;
 		/// Obsolete. Please use --config-path instead
 		/// </summary>
-		public string Config { get; set; }
+		public string? Config { get; set; }
 		/// <summary>
 		/// --sign-info &lt;arg&gt;
 		/// Use Signing Info for signing the test server
 		/// </summary>
-		public string SignInfo { get; set; }
+		public string? SignInfo { get; set; }
 		/// <summary>
 		/// --workspace &lt;arg&gt;
 		/// Obsolete. Please use --project-dir instead
 		/// </summary>
-		public string Workspace { get; set; }
+		public string? Workspace { get; set; }
 		/// <summary>
 		/// --project-dir &lt;arg&gt;
 		/// Path to the Calabash workspace directory (usually &lt;project&gt;/features)
 		/// </summary>
-		public string ProjectDir { get; set; }
+		public string? ProjectDir { get; set; }
 		/// <summary>
 		/// -p|--test-parameter &lt;arg&gt;
 		/// Additional test parameters. The value must be in format &quot;key=value&quot;
 		/// </summary>
-		public string TestParameter { get; set; }
+		public string? TestParameter { get; set; }
 		/// <summary>
 		/// --include &lt;arg&gt;
 		/// Additional files and directories to include. The value must be either path relative to the input directory, or be in format &quot;targetDir=sourceDir&quot;
 		/// </summary>
-		public string Include { get; set; }
+		public string? Include { get; set; }
 		/// <summary>
 		/// --disable-telemetry
 		/// Disable telemetry for this command
@@ -89,17 +89,17 @@ namespace Cake.AppCenter
 		/// --env &lt;arg&gt;
 		/// Environment when using API token
 		/// </summary>
-		public string Env { get; set; }
+		public string? Env { get; set; }
 		/// <summary>
 		/// --token &lt;arg&gt;
 		/// API token
 		/// </summary>
-		public string Token { get; set; }
+		public string? Token { get; set; }
 		/// <summary>
 		/// --output &lt;arg&gt;
 		/// Output format: json
 		/// </summary>
-		public string Output { get; set; }
+		public string? Output { get; set; }
 		/// <summary>
 		/// --debug
 		/// Display extra output for debugging

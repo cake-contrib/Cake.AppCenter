@@ -14,22 +14,22 @@ namespace Cake.AppCenter
 		/// -c|--version-code &lt;arg&gt;
 		/// The version code to associate with the mappings.
 		/// </summary>
-		public string VersionCode { get; set; }
+		public string? VersionCode { get; set; }
 		/// <summary>
 		/// -n|--version-name &lt;arg&gt;
 		/// The version name to associate with the mappings.
 		/// </summary>
-		public string VersionName { get; set; }
+		public string? VersionName { get; set; }
 		/// <summary>
 		/// -m|--mapping &lt;arg&gt;
 		/// Path to an Android mapping.txt file.
 		/// </summary>
-		public string Mapping { get; set; }
+		public string? Mapping { get; set; }
 		/// <summary>
 		/// -a|--app &lt;arg&gt;
 		/// Specify app in the &lt;ownerName&gt;/&lt;appName&gt; format
 		/// </summary>
-		public string App { get; set; }
+		public string? App { get; set; }
 		/// <summary>
 		/// --disable-telemetry
 		/// Disable telemetry for this command
@@ -54,17 +54,17 @@ namespace Cake.AppCenter
 		/// --env &lt;arg&gt;
 		/// Environment when using API token
 		/// </summary>
-		public string Env { get; set; }
+		public string? Env { get; set; }
 		/// <summary>
 		/// --token &lt;arg&gt;
 		/// API token
 		/// </summary>
-		public string Token { get; set; }
+		public string? Token { get; set; }
 		/// <summary>
 		/// --output &lt;arg&gt;
 		/// Output format: json
 		/// </summary>
-		public string Output { get; set; }
+		public string? Output { get; set; }
 		/// <summary>
 		/// --debug
 		/// Display extra output for debugging

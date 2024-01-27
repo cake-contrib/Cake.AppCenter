@@ -1,6 +1,4 @@
-﻿using NUnit.Framework;
-
-namespace Cake.AppCenter.Tests.Test.Run.UITest;
+﻿namespace Cake.AppCenter.Tests.Test.Run.UITest;
 
 [TestFixture]
 public class AppCenterTestRunUITestTest

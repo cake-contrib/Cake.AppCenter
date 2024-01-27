@@ -12,10 +12,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="newDeploymentName">The newDeploymentName.</param>
         
 		[CakeMethodAlias]
         [CakeAliasCategory("Codepush")] 
-		public static void AppCenterCodepushDeploymentAdd(this ICakeContext context, AppCenterCodepushDeploymentAddSettings settings, string newDeploymentName)
+		public static void AppCenterCodepushDeploymentAdd(this ICakeContext context, AppCenterCodepushDeploymentAddSettings settings, string? newDeploymentName)
 		{
 			if (context == null)
 			{
@@ -36,10 +37,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="newDeploymentName">The newDeploymentName.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
         [CakeAliasCategory("Codepush")] 
-		public static IEnumerable<string> AppCenterCodepushDeploymentAddWithResult(this ICakeContext context, AppCenterCodepushDeploymentAddSettings settings, string newDeploymentName)
+		public static IEnumerable<string> AppCenterCodepushDeploymentAddWithResult(this ICakeContext context, AppCenterCodepushDeploymentAddSettings settings, string? newDeploymentName)
 		{
 			if (context == null)
 			{

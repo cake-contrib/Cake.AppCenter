@@ -14,7 +14,7 @@ namespace Cake.AppCenter
 		/// -s|--shell &lt;arg&gt;
 		/// Shell to generate autocompletion code for. Supported values - bash, zsh, fish. Default: shell specified in $SHELL
 		/// </summary>
-		public string Shell { get; set; }
+		public string? Shell { get; set; }
 		/// <summary>
 		/// --disable-telemetry
 		/// Disable telemetry for this command
@@ -39,17 +39,17 @@ namespace Cake.AppCenter
 		/// --env &lt;arg&gt;
 		/// Environment when using API token
 		/// </summary>
-		public string Env { get; set; }
+		public string? Env { get; set; }
 		/// <summary>
 		/// --token &lt;arg&gt;
 		/// API token
 		/// </summary>
-		public string Token { get; set; }
+		public string? Token { get; set; }
 		/// <summary>
 		/// --output &lt;arg&gt;
 		/// Output format: json
 		/// </summary>
-		public string Output { get; set; }
+		public string? Output { get; set; }
 		/// <summary>
 		/// --debug
 		/// Display extra output for debugging

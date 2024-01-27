@@ -14,27 +14,27 @@ namespace Cake.AppCenter
 		/// -t|--type &lt;arg&gt;
 		/// Type of download. &#39;build&#39;, &#39;bundle&#39;, &#39;logs&#39;, and &#39;symbols&#39; are allowed values
 		/// </summary>
-		public string Type { get; set; }
+		public string? Type { get; set; }
 		/// <summary>
 		/// -i|--id &lt;arg&gt;
 		/// ID of build to download
 		/// </summary>
-		public string Id { get; set; }
+		public string? Id { get; set; }
 		/// <summary>
 		/// -f|--file &lt;arg&gt;
 		/// Destination file. Optional parameter to override the default auto-generated file name
 		/// </summary>
-		public string File { get; set; }
+		public string? File { get; set; }
 		/// <summary>
 		/// -d|--dest &lt;arg&gt;
 		/// Destination path. Optional parameter to override the default destination path of the downloaded build
 		/// </summary>
-		public string Dest { get; set; }
+		public string? Dest { get; set; }
 		/// <summary>
 		/// -a|--app &lt;arg&gt;
 		/// Specify app in the &lt;ownerName&gt;/&lt;appName&gt; format
 		/// </summary>
-		public string App { get; set; }
+		public string? App { get; set; }
 		/// <summary>
 		/// --disable-telemetry
 		/// Disable telemetry for this command
@@ -59,17 +59,17 @@ namespace Cake.AppCenter
 		/// --env &lt;arg&gt;
 		/// Environment when using API token
 		/// </summary>
-		public string Env { get; set; }
+		public string? Env { get; set; }
 		/// <summary>
 		/// --token &lt;arg&gt;
 		/// API token
 		/// </summary>
-		public string Token { get; set; }
+		public string? Token { get; set; }
 		/// <summary>
 		/// --output &lt;arg&gt;
 		/// Output format: json
 		/// </summary>
-		public string Output { get; set; }
+		public string? Output { get; set; }
 		/// <summary>
 		/// --debug
 		/// Display extra output for debugging

@@ -14,12 +14,12 @@ namespace Cake.AppCenter
 		/// -d|--display-name &lt;arg&gt;
 		/// Display name of the organization
 		/// </summary>
-		public string DisplayName { get; set; }
+		public string? DisplayName { get; set; }
 		/// <summary>
 		/// -n|--name &lt;arg&gt;
 		/// Name of the organization
 		/// </summary>
-		public string Name { get; set; }
+		public string? Name { get; set; }
 		/// <summary>
 		/// --disable-telemetry
 		/// Disable telemetry for this command
@@ -44,17 +44,17 @@ namespace Cake.AppCenter
 		/// --env &lt;arg&gt;
 		/// Environment when using API token
 		/// </summary>
-		public string Env { get; set; }
+		public string? Env { get; set; }
 		/// <summary>
 		/// --token &lt;arg&gt;
 		/// API token
 		/// </summary>
-		public string Token { get; set; }
+		public string? Token { get; set; }
 		/// <summary>
 		/// --output &lt;arg&gt;
 		/// Output format: json
 		/// </summary>
-		public string Output { get; set; }
+		public string? Output { get; set; }
 		/// <summary>
 		/// --debug
 		/// Display extra output for debugging

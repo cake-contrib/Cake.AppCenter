@@ -14,12 +14,12 @@ namespace Cake.AppCenter
 		/// -b|--branch &lt;arg&gt;
 		/// Branch to be built
 		/// </summary>
-		public string Branch { get; set; }
+		public string? Branch { get; set; }
 		/// <summary>
 		/// -s|--source-version &lt;arg&gt;
 		/// Source control version reference
 		/// </summary>
-		public string SourceVersion { get; set; }
+		public string? SourceVersion { get; set; }
 		/// <summary>
 		/// -d|--debug-logs
 		/// Enable debug mode
@@ -29,7 +29,7 @@ namespace Cake.AppCenter
 		/// -a|--app &lt;arg&gt;
 		/// Specify app in the &lt;ownerName&gt;/&lt;appName&gt; format
 		/// </summary>
-		public string App { get; set; }
+		public string? App { get; set; }
 		/// <summary>
 		/// --disable-telemetry
 		/// Disable telemetry for this command
@@ -54,17 +54,17 @@ namespace Cake.AppCenter
 		/// --env &lt;arg&gt;
 		/// Environment when using API token
 		/// </summary>
-		public string Env { get; set; }
+		public string? Env { get; set; }
 		/// <summary>
 		/// --token &lt;arg&gt;
 		/// API token
 		/// </summary>
-		public string Token { get; set; }
+		public string? Token { get; set; }
 		/// <summary>
 		/// --output &lt;arg&gt;
 		/// Output format: json
 		/// </summary>
-		public string Output { get; set; }
+		public string? Output { get; set; }
 		/// <summary>
 		/// --debug
 		/// Display extra output for debugging

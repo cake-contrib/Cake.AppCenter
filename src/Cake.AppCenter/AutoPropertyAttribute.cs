@@ -12,7 +12,7 @@ namespace Cake.AppCenter
         /// Format of the output, i.e. "-s {1}"
         /// where {0} is property name and {1} is value.
         /// </summary>
-        public string Format { get; set; }
+        public string? Format { get; set; }
         /// <summary>
         /// Outputs only when given value is true.
         /// </summary>

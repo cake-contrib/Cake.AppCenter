@@ -14,22 +14,22 @@ namespace Cake.AppCenter
 		/// -n|--name &lt;arg&gt;
 		/// Distribution group name
 		/// </summary>
-		public string Name { get; set; }
+		public string? Name { get; set; }
 		/// <summary>
 		/// -T|--testers-file &lt;arg&gt;
 		/// Path to file containing list of testers
 		/// </summary>
-		public string TestersFile { get; set; }
+		public string? TestersFile { get; set; }
 		/// <summary>
 		/// -t|--testers &lt;arg&gt;
 		/// List of testers (space-separated list of e-mails)
 		/// </summary>
-		public string Testers { get; set; }
+		public string? Testers { get; set; }
 		/// <summary>
 		/// -a|--app &lt;arg&gt;
 		/// Specify app in the &lt;ownerName&gt;/&lt;appName&gt; format
 		/// </summary>
-		public string App { get; set; }
+		public string? App { get; set; }
 		/// <summary>
 		/// --disable-telemetry
 		/// Disable telemetry for this command
@@ -54,17 +54,17 @@ namespace Cake.AppCenter
 		/// --env &lt;arg&gt;
 		/// Environment when using API token
 		/// </summary>
-		public string Env { get; set; }
+		public string? Env { get; set; }
 		/// <summary>
 		/// --token &lt;arg&gt;
 		/// API token
 		/// </summary>
-		public string Token { get; set; }
+		public string? Token { get; set; }
 		/// <summary>
 		/// --output &lt;arg&gt;
 		/// Output format: json
 		/// </summary>
-		public string Output { get; set; }
+		public string? Output { get; set; }
 		/// <summary>
 		/// --debug
 		/// Display extra output for debugging

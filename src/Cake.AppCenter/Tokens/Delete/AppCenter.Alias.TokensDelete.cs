@@ -12,10 +12,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="token">The token.</param>
         
 		[CakeMethodAlias]
         [CakeAliasCategory("Tokens")] 
-		public static void AppCenterTokensDelete(this ICakeContext context, AppCenterTokensDeleteSettings settings, string token)
+		public static void AppCenterTokensDelete(this ICakeContext context, AppCenterTokensDeleteSettings settings, string? token)
 		{
 			if (context == null)
 			{
@@ -36,10 +37,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="token">The token.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
         [CakeAliasCategory("Tokens")] 
-		public static IEnumerable<string> AppCenterTokensDeleteWithResult(this ICakeContext context, AppCenterTokensDeleteSettings settings, string token)
+		public static IEnumerable<string> AppCenterTokensDeleteWithResult(this ICakeContext context, AppCenterTokensDeleteSettings settings, string? token)
 		{
 			if (context == null)
 			{

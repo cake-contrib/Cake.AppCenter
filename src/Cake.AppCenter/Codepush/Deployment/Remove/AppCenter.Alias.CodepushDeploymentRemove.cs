@@ -12,10 +12,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="deploymentName">The deploymentName.</param>
         
 		[CakeMethodAlias]
         [CakeAliasCategory("Codepush")] 
-		public static void AppCenterCodepushDeploymentRemove(this ICakeContext context, AppCenterCodepushDeploymentRemoveSettings settings, string deploymentName)
+		public static void AppCenterCodepushDeploymentRemove(this ICakeContext context, AppCenterCodepushDeploymentRemoveSettings settings, string? deploymentName)
 		{
 			if (context == null)
 			{
@@ -36,10 +37,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="deploymentName">The deploymentName.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
         [CakeAliasCategory("Codepush")] 
-		public static IEnumerable<string> AppCenterCodepushDeploymentRemoveWithResult(this ICakeContext context, AppCenterCodepushDeploymentRemoveSettings settings, string deploymentName)
+		public static IEnumerable<string> AppCenterCodepushDeploymentRemoveWithResult(this ICakeContext context, AppCenterCodepushDeploymentRemoveSettings settings, string? deploymentName)
 		{
 			if (context == null)
 			{

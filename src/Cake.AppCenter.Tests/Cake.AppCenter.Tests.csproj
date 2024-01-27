@@ -1,7 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,6 +29,15 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cake.AppCenter\Cake.AppCenter.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Cake.Core" />
+    <Using Include="Cake.Core.Configuration" />
+    <Using Include="Cake.Core.Diagnostics" />
+    <Using Include="Cake.Core.IO" />
+    <Using Include="Cake.Testing.Fixtures" />
+    <Using Include="NUnit.Framework" />
   </ItemGroup>
 
 </Project>

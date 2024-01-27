@@ -12,10 +12,12 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="currentDeploymentName">The currentDeploymentName.</param>
+/// <param name="newDeploymentName">The newDeploymentName.</param>
         
 		[CakeMethodAlias]
         [CakeAliasCategory("Codepush")] 
-		public static void AppCenterCodepushDeploymentRename(this ICakeContext context, AppCenterCodepushDeploymentRenameSettings settings, string currentDeploymentName, string newDeploymentName)
+		public static void AppCenterCodepushDeploymentRename(this ICakeContext context, AppCenterCodepushDeploymentRenameSettings settings, string? currentDeploymentName, string? newDeploymentName)
 		{
 			if (context == null)
 			{
@@ -40,10 +42,12 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="currentDeploymentName">The currentDeploymentName.</param>
+/// <param name="newDeploymentName">The newDeploymentName.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
         [CakeAliasCategory("Codepush")] 
-		public static IEnumerable<string> AppCenterCodepushDeploymentRenameWithResult(this ICakeContext context, AppCenterCodepushDeploymentRenameSettings settings, string currentDeploymentName, string newDeploymentName)
+		public static IEnumerable<string> AppCenterCodepushDeploymentRenameWithResult(this ICakeContext context, AppCenterCodepushDeploymentRenameSettings settings, string? currentDeploymentName, string? newDeploymentName)
 		{
 			if (context == null)
 			{

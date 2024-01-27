@@ -13,6 +13,7 @@ namespace Cake.AppCenter
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
         
+        
 		[CakeMethodAlias]
         [CakeAliasCategory("Profile")] 
 		public static void AppCenterProfileList(this ICakeContext context, AppCenterProfileListSettings settings)
@@ -32,6 +33,7 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
         [CakeAliasCategory("Profile")] 

@@ -13,6 +13,7 @@ namespace Cake.AppCenter
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
         
+        
 		[CakeMethodAlias]
         [CakeAliasCategory("Telemetry")] 
 		public static void AppCenterTelemetryOn(this ICakeContext context, AppCenterTelemetryOnSettings settings)
@@ -32,6 +33,7 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
         [CakeAliasCategory("Telemetry")] 

@@ -12,10 +12,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="app">The app.</param>
         
 		[CakeMethodAlias]
         [CakeAliasCategory("Apps")] 
-		public static void AppCenterAppsSetCurrent(this ICakeContext context, AppCenterAppsSetCurrentSettings settings, string app)
+		public static void AppCenterAppsSetCurrent(this ICakeContext context, AppCenterAppsSetCurrentSettings settings, string? app)
 		{
 			if (context == null)
 			{
@@ -36,10 +37,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="settings">The settings.</param>
+        /// <param name="app">The app.</param>
         /// <returns>Output lines.</returns>
 		[CakeMethodAlias]
         [CakeAliasCategory("Apps")] 
-		public static IEnumerable<string> AppCenterAppsSetCurrentWithResult(this ICakeContext context, AppCenterAppsSetCurrentSettings settings, string app)
+		public static IEnumerable<string> AppCenterAppsSetCurrentWithResult(this ICakeContext context, AppCenterAppsSetCurrentSettings settings, string? app)
 		{
 			if (context == null)
 			{
