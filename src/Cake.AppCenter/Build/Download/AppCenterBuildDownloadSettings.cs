@@ -12,7 +12,7 @@ namespace Cake.AppCenter
 	{
 		/// <summary>
 		/// -t|--type &lt;arg&gt;
-		/// Type of download. &#39;build&#39;, &#39;logs&#39;, and &#39;symbols&#39; are allowed values
+		/// Type of download. &#39;build&#39;, &#39;bundle&#39;, &#39;logs&#39;, and &#39;symbols&#39; are allowed values
 		/// </summary>
 		public string Type { get; set; }
 		/// <summary>

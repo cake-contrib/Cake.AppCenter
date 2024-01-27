@@ -26,7 +26,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(newDeploymentName));
             }
             var arguments = new string[] { newDeploymentName };
-            var runner = new GenericRunner<AppCenterCodepushDeploymentAddSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterCodepushDeploymentAddSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			 runner.Run("codepush deployment add", settings ?? new AppCenterCodepushDeploymentAddSettings(), arguments);
 		}
 
@@ -50,7 +50,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(newDeploymentName));
             }
             var arguments = new string[] { newDeploymentName };
-            var runner = new GenericRunner<AppCenterCodepushDeploymentAddSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterCodepushDeploymentAddSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			return runner.RunWithResult("codepush deployment add", settings ?? new AppCenterCodepushDeploymentAddSettings(), arguments);
 		}
 

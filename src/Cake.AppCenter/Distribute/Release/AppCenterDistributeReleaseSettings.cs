@@ -16,6 +16,11 @@ namespace Cake.AppCenter
 		/// </summary>
 		public string File { get; set; }
 		/// <summary>
+		/// -t|--timeout &lt;arg&gt;
+		/// Timeout for waiting release id (in seconds)
+		/// </summary>
+		public string Timeout { get; set; }
+		/// <summary>
 		/// --mandatory
 		/// Make the release mandatory for the testers (default is false)
 		/// </summary>

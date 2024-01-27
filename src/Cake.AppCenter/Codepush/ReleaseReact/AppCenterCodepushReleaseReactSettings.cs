@@ -11,6 +11,11 @@ namespace Cake.AppCenter
 	public sealed class AppCenterCodepushReleaseReactSettings : AutoToolSettings
 	{
 		/// <summary>
+		/// --use-hermes
+		/// Enable hermes and bypass automatic checks
+		/// </summary>
+		public bool? UseHermes { get; set; }
+		/// <summary>
 		/// --extra-hermes-flag &lt;arg&gt;
 		/// Flag that gets passed to Hermes, JavaScript to bytecode compiler. Can be specified multiple times
 		/// </summary>
@@ -40,6 +45,11 @@ namespace Cake.AppCenter
 		/// Path to where the sourcemap for the resulting bundle should be written. If omitted, a sourcemap will not be generated
 		/// </summary>
 		public string SourcemapOutput { get; set; }
+		/// <summary>
+		/// -xt|--xcode-target-name &lt;arg&gt;
+		/// Name of target (PBXNativeTarget) which specifies the binary version you want to target this release at (iOS only)
+		/// </summary>
+		public string XcodeTargetName { get; set; }
 		/// <summary>
 		/// -c|--build-configuration-name &lt;arg&gt;
 		/// Name of build configuration which specifies the binary version you want to target this release at. For example, &quot;Debug&quot; or &quot;Release&quot; (iOS only)

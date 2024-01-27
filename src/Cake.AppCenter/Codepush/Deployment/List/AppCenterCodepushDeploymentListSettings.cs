@@ -11,6 +11,11 @@ namespace Cake.AppCenter
 	public sealed class AppCenterCodepushDeploymentListSettings : AutoToolSettings
 	{
 		/// <summary>
+		/// -s|--skipFetchingDeploymentMetrics
+		/// Specifies whether to fetch deployment metrics
+		/// </summary>
+		public bool? SkipFetchingDeploymentMetrics { get; set; }
+		/// <summary>
 		/// -k|--displayKeys
 		/// Specifies whether to display the deployment keys
 		/// </summary>

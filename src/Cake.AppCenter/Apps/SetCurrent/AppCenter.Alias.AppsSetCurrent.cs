@@ -26,7 +26,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(app));
             }
             var arguments = new string[] { app };
-            var runner = new GenericRunner<AppCenterAppsSetCurrentSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterAppsSetCurrentSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			 runner.Run("apps set-current", settings ?? new AppCenterAppsSetCurrentSettings(), arguments);
 		}
 
@@ -50,7 +50,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(app));
             }
             var arguments = new string[] { app };
-            var runner = new GenericRunner<AppCenterAppsSetCurrentSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterAppsSetCurrentSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			return runner.RunWithResult("apps set-current", settings ?? new AppCenterAppsSetCurrentSettings(), arguments);
 		}
 

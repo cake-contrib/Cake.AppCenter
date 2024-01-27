@@ -26,7 +26,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(shellProfilePath));
             }
             var arguments = new string[] { shellProfilePath };
-            var runner = new GenericRunner<AppCenterSetupAutocompleteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterSetupAutocompleteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			 runner.Run("setup-autocomplete", settings ?? new AppCenterSetupAutocompleteSettings(), arguments);
 		}
 
@@ -50,7 +50,7 @@ namespace Cake.AppCenter
                 throw new ArgumentNullException(nameof(shellProfilePath));
             }
             var arguments = new string[] { shellProfilePath };
-            var runner = new GenericRunner<AppCenterSetupAutocompleteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
+            var runner = new GenericRunner<AppCenterSetupAutocompleteSettings >(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools, context.Log);
 			return runner.RunWithResult("setup-autocomplete", settings ?? new AppCenterSetupAutocompleteSettings(), arguments);
 		}
 
