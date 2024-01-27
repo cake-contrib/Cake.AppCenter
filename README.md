@@ -7,8 +7,8 @@ A Cake AddIn that extends Cake with [AppCenter](https://github.com/Microsoft/app
 
 |Branch|Status|
 |------|------|
-|Master|[![Build status](https://ci.appveyor.com/api/projects/status/github/cake-contrib/Cake.AppCenter?branch=master&svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-dart)|
-|Develop|[![Build status](https://ci.appveyor.com/api/projects/status/github/cake-contrib/Cake.AppCenter?branch=develop&svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-dart)|
+|Master|[![Build status](https://ci.appveyor.com/api/projects/status/github/cake-contrib/Cake.AppCenter?branch=master&svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-appcenter)|
+|Develop|[![Build status](https://ci.appveyor.com/api/projects/status/github/cake-contrib/Cake.AppCenter?branch=develop&svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-appcenter)|
 
 ## Important
 
