@@ -19,12 +19,12 @@ namespace Cake.AppCenter
 		/// --extra-hermes-flag &lt;arg&gt;
 		/// Flag that gets passed to Hermes, JavaScript to bytecode compiler. Can be specified multiple times
 		/// </summary>
-		public string ExtraHermesFlag { get; set; }
+		public string[] ExtraHermesFlag { get; set; }
 		/// <summary>
 		/// --extra-bundler-option &lt;arg&gt;
 		/// Option that gets passed to react-native bundler. Can be specified multiple times
 		/// </summary>
-		public string ExtraBundlerOption { get; set; }
+		public string[] ExtraBundlerOption { get; set; }
 		/// <summary>
 		/// -t|--target-binary-version &lt;arg&gt;
 		/// Semver expression that specifies the binary app version(s) this release is targeting (e.g. 1.1.0, ~1.2.3)

@@ -14,7 +14,7 @@ namespace Cake.AppCenter
 		/// --extra-bundler-option &lt;arg&gt;
 		/// Option that gets passed to webpack bundler. Can be specified multiple times
 		/// </summary>
-		public string ExtraBundlerOption { get; set; }
+		public string[] ExtraBundlerOption { get; set; }
 		/// <summary>
 		/// -t|--target-binary-version &lt;arg&gt;
 		/// Semver expression that specifies the binary app version(s) this release is targeting (e.g. 1.1.0, ~1.2.3)

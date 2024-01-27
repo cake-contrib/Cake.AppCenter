@@ -44,7 +44,7 @@ namespace Cake.AppCenter
 		/// --fixture &lt;arg&gt;
 		/// NUnit fixture / namespace to run. If used with include- / exclude-category the fixture filter is applied first (Can be used multiple times)
 		/// </summary>
-		public string Fixture { get; set; }
+		public string[] Fixture { get; set; }
 		/// <summary>
 		/// --uitest-tools-dir &lt;arg&gt;
 		/// Path to the directory containing the Xamarin UI Tests tools including test-cloud.exe
