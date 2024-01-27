@@ -4,14 +4,19 @@ A Cake AddIn that extends Cake with [AppCenter](https://github.com/Microsoft/app
 
 [![cakebuild.net](https://img.shields.io/badge/WWW-cakebuild.net-blue.svg)](http://cakebuild.net/)
 [![NuGet](https://img.shields.io/nuget/v/Cake.AppCenter.svg)](https://www.nuget.org/packages/Cake.AppCenter)
-[![Build status](https://ci.appveyor.com/api/projects/status/vi07dth3d1gek7ak?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-appcenter)
+
+|Branch|Status|
+|------|------|
+|Master|[![Build status](https://ci.appveyor.com/api/projects/status/github/cake-contrib/Cake.AppCenter?branch=master&svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-dart)|
+|Develop|[![Build status](https://ci.appveyor.com/api/projects/status/github/cake-contrib/Cake.AppCenter?branch=develop&svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-dart)|
 
 ## Important
 
 1.4.0 
 * Supports AppCenter 2.10.10
-* References Cake 2.0.0
+* References Cake 4.0.0
 * Drops support for .NET Framework
+* Supports .net 6+
 
 1.3.1 References Cake 1.0.0
 
