@@ -10,6 +10,7 @@ BuildParameters.SetParameters(
     repositoryOwner: "cake-contrib",
     repositoryName: "Cake.AppCenter",
     appVeyorAccountName: "cakecontrib",
+    shouldPostToGitter: false,
     shouldRunInspectCode: false,
 	shouldRunCodecov: false,
     shouldRunDotNetCorePack: true,
