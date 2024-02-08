@@ -79,4 +79,4 @@ If you have questions, search for an existing one, or create a new discussion on
 
 Brought to you by [Miha Markic](https://github.com/MihaMarkic) and contributors. 
 
-![Mastodon Follow](https: //img.shields.io/mastodon/follow/001030236)
+![Mastodon Follow](https://img.shields.io/mastodon/follow/001030236)
