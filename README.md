@@ -1,4 +1,8 @@
-﻿# Cake.AppCenter
+# Discontinued
+
+Since AppCenter has been retired, this Cake extension is deprecated as well.
+ 
+ # Cake.AppCenter
 
 A Cake AddIn that extends Cake with [AppCenter](https://github.com/Microsoft/appcenter-cli/) command tools. Based on older addin version for MobileCenter.
 
